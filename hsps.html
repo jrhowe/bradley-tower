@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Xenon Boostrap Admin Panel" />
+	<meta name="author" content="" />
+
+	<title>Los Angeles City - Dashboard</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
+	<link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/xenon-core.css">
+	<link rel="stylesheet" href="assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="assets/css/xenon-components.css">
+	<link rel="stylesheet" href="assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+</head>
+<body class="page-body">
+	
+	<div class="settings-pane">
+			
+		<a href="#" data-toggle="settings-pane" data-animate="true">
+			&times;
+		</a>
+		
+		<div class="settings-pane-inner">
+			
+			<div class="row">
+				
+				<div class="col-md-4">
+					
+					<div class="user-info">
+						
+						<div class="user-image">
+							<a href="extra-profile.html">
+								<img src="assets/images/user-2.png" class="img-responsive img-circle" />
+							</a>
+						</div>
+						
+						<div class="user-details">
+							
+							<h3>
+								<a href="extra-profile.html">John Smith</a>
+								
+								<!-- Available statuses: is-online, is-idle, is-busy and is-offline -->
+								<span class="user-status is-online"></span>
+							</h3>
+							
+							<p class="user-title">Web Developer</p>
+							
+							<div class="user-links">
+								<a href="extra-profile.html" class="btn btn-primary">Edit Profile</a>
+								<a href="extra-profile.html" class="btn btn-success">Upgrade</a>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="col-md-8 link-blocks-env">
+					
+					<div class="links-block left-sep">
+						<h4>
+							<span>Notifications</span>
+						</h4>
+						
+						<ul class="list-unstyled">
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk1" />
+								<label for="sp-chk1">Messages</label>
+							</li>
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk2" />
+								<label for="sp-chk2">Events</label>
+							</li>
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk3" />
+								<label for="sp-chk3">Updates</label>
+							</li>
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk4" />
+								<label for="sp-chk4">Server Uptime</label>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="links-block left-sep">
+						<h4>
+							<a href="#">
+								<span>Help Desk</span>
+							</a>
+						</h4>
+						
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">
+									<i class="fa-angle-right"></i>
+									Support Center
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-angle-right"></i>
+									Submit a Ticket
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-angle-right"></i>
+									Domains Protocol
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-angle-right"></i>
+									Terms of Service
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				
+			</div>
+		
+		</div>
+		
+	</div>
+	
+	<nav class="navbar horizontal-menu navbar-fixed-top navbar-minimal"><!-- set fixed position by adding class "navbar-fixed-top" -->
+		
+		<div class="navbar-inner">
+		
+			<!-- Navbar Brand -->
+			<div class="navbar-brand">
+				<a href="/" class="logo">
+					<img src="http://datala.github.io/flushots/img/datala.png" width="80" alt="" class="hidden-xs" />
+					<img src="http://datala.github.io/flushots/img/datala.png" width="80" alt="" class="visible-xs" />
+				</a>
+				<a href="#" data-toggle="settings-pane" data-animate="true">
+					<i class="linecons-cog"></i>
+				</a>
+			</div>
+				
+			<!-- Mobile Toggles Links -->
+			<div class="nav navbar-mobile">
+			
+				<!-- This will toggle the mobile menu and will be visible only on mobile devices -->
+				<div class="mobile-menu-toggle">
+					<!-- This will open the popup with user profile settings, you can use for any purpose, just be creative -->
+					<a href="#" data-toggle="settings-pane" data-animate="true">
+						<i class="linecons-cog"></i>
+					</a>
+					
+					<a href="#" data-toggle="user-info-menu-horizontal">
+						<i class="fa-bell-o"></i>
+						<span class="badge badge-success">7</span>
+					</a>
+					
+					<!-- data-toggle="mobile-menu-horizontal" will show horizontal menu links only -->
+					<!-- data-toggle="mobile-menu" will show sidebar menu links only -->
+					<!-- data-toggle="mobile-menu-both" will show sidebar and horizontal menu links -->
+					<a href="#" data-toggle="mobile-menu-horizontal">
+						<i class="fa-bars"></i>
+					</a>
+				</div>
+				
+			</div>
+			
+			<div class="navbar-mobile-clear"></div>
+			
+			
+			
+			<!-- main menu -->
+					
+			<ul class="navbar-nav">
+				<li>
+					<a href="index.html">
+						<i class="linecons-cog"></i>
+						<span class="title">Top Sheet</span>
+					</a>
+					
+				</li>
+				<li>
+					<a href="moed.html">
+						<i class="linecons-desktop"></i>
+						<span class="title">MOED</span>
+					</a>
+				</li>
+				<li  class="opened active">
+					<a href="hsps.html">
+						<i class="linecons-note"></i>
+						<span class="title">HSPS</span>
+					</a>
+				</li>
+				<li>
+					<a href="mobi.html">
+						<i class="linecons-params"></i>
+						<span class="title">MOBI</span>
+					</a>
+				</li>
+				<li>
+					<a href="/">
+						<i class="linecons-diamond"></i>
+						<span class="title">MOCS</span>
+					</a>
+				</li>
+			</ul>
+					
+			
+			<!-- notifications and other links -->
+		
+		</div>
+		
+	</nav>
+	
+	
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		<!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+		<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+	
+		<div class="main-content">
+					
+	
+	
+
+	<div class="row">
+		
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">LAPD & LAFP Response Times</h3>
+					<div class="panel-options">
+						<a href="#" data-toggle="panel">
+							<span class="collapse-icon">&ndash;</span>
+							<span class="expand-icon">+</span>
+						</a>
+						<a href="#" data-toggle="remove">
+							&times;
+						</a>
+					</div>
+				</div>
+				<div class="panel-body">	
+				<div class="col-sm-3">
+					<script type="text/javascript">
+						jQuery(document).ready(function($)
+						{
+							if( ! $.isFunction($.fn.dxChart))
+								return;
+				
+							var gauge = $('#gauge-2').dxCircularGauge({
+								scale: {
+									startValue: 0,
+									endValue: 40,
+									majorTick: {
+										color: '#1A1100',
+										tickInterval: 10
+									},
+									minorTick: {
+										color: '#1A1100',
+										visible: true,
+										tickInterval: 2
+									}
+								},
+								rangeContainer: {
+									backgroundColor: 'none'
+								},
+							    tooltip: {
+							            enabled: true,
+								},
+								title: {
+									text: 'LAFD Call Transfer Time (Seconds)',
+									font: { size: 12 }
+								},
+						        valueIndicator: {
+						            color: 'green'
+						        },
+								value: 30,
+								subvalues: [30]
+								
+								
+							}).dxCircularGauge('instance');
+			
+							$("#gauge-2-randomize").on('click', function(ev)
+							{
+								ev.preventDefault();
+				
+								gauge.value(between(0, 1000));
+				
+							});
+			
+							$("#gauge-2-res").on('click', function(ev)
+							{
+								ev.preventDefault();
+				
+								gauge.value(0);
+							});
+						});
+					</script>
+					<div id="gauge-2" style="height: 250px; margin: 0 30px;"></div>
+				</div>
+				<div class="col-sm-3">
+					<script type="text/javascript">
+						jQuery(document).ready(function($)
+						{
+							if( ! $.isFunction($.fn.dxChart))
+								return;
+				
+							var gauge = $('#gauge-3').dxCircularGauge({
+								scale: {
+									startValue: 0,
+									endValue: 400,
+									majorTick: {
+										color: '#1A1100',
+										tickInterval: 50
+									},
+									minorTick: {
+										color: '#1A1100',
+										visible: true,
+										tickInterval: 25
+									}
+								},
+								rangeContainer: {
+									backgroundColor: 'none'
+								},
+						        valueIndicator: {
+						            color: 'green'
+						        },
+							    tooltip: {
+							            enabled: true,
+								},
+								title: {
+									text: 'LAFD Travel Time (Fire) (seconds)',
+									font: { size: 12 }
+								},
+								value: 306,
+								subvalues: [290]
+							}).dxCircularGauge('instance');
+			
+							$("#gauge-2-randomize").on('click', function(ev)
+							{
+								ev.preventDefault();
+				
+								gauge.value(between(0, 1000));
+				
+							});
+			
+							$("#gauge-2-res").on('click', function(ev)
+							{
+								ev.preventDefault();
+				
+								gauge.value(0);
+							});
+						});
+					</script>
+					<div id="gauge-3" style="height: 250px; margin: 0 30px;"></div>
+				</div>
+				<div class="col-sm-3">
+					<script type="text/javascript">
+						jQuery(document).ready(function($)
+						{
+							if( ! $.isFunction($.fn.dxChart))
+								return;
+				
+							var gauge = $('#gauge-4').dxCircularGauge({
+								scale: {
+									startValue: 0,
+									endValue: 300,
+									majorTick: {
+										color: '#1A1100',
+										tickInterval: 50
+									},
+									minorTick: {
+										color: '#1A1100',
+										visible: true,
+										tickInterval: 10
+									}
+								},
+							    tooltip: {
+							            enabled: true,
+								},
+								rangeContainer: {
+									backgroundColor: 'none'
+								},
+								title: {
+									text: 'LAFD Travel Time (EMS) (seconds)',
+									font: { size: 12 }
+								},
+								value: 286,
+						        valueIndicator: {
+						            color: 'red'
+						        },
+								subvalues: [271]
+								
+							}).dxCircularGauge('instance');
+			
+							$("#gauge-2-randomize").on('click', function(ev)
+							{
+								ev.preventDefault();
+				
+								gauge.value(between(0, 1000));
+				
+							});
+			
+							$("#gauge-2-res").on('click', function(ev)
+							{
+								ev.preventDefault();
+				
+								gauge.value(0);
+							});
+						});
+					</script>
+					<div id="gauge-4" style="height: 250px; margin: 0 30px;"></div>
+				</div>
+				<div class="col-sm-3">
+					<script type="text/javascript">
+						jQuery(document).ready(function($)
+						{
+							if( ! $.isFunction($.fn.dxChart))
+								return;
+				
+							var gauge = $('#gauge-5').dxCircularGauge({
+								scale: {
+									startValue: 0,
+									endValue: 100,
+									majorTick: {
+										color: '#1A1100',
+										tickInterval: 10
+									},
+									minorTick: {
+										color: '#1A1100',
+										visible: true,
+										tickInterval: 5
+									}
+								},
+								rangeContainer: {
+									backgroundColor: 'none'
+								},
+							    tooltip: {
+							            enabled: true,
+								},
+								title: {
+									text: 'EMD Call Processing Time (seconds)',
+									font: { size: 12 }
+								},
+						        valueIndicator: {
+						            color: 'red'
+						        },
+								value: 80,
+								subvalues: [60]
+								
+								
+							}).dxCircularGauge('instance');
+			
+							$("#gauge-2-randomize").on('click', function(ev)
+							{
+								ev.preventDefault();
+				
+								gauge.value(between(0, 1000));
+				
+							});
+			
+							$("#gauge-2-res").on('click', function(ev)
+							{
+								ev.preventDefault();
+				
+								gauge.value(0);
+							});
+						});
+					</script>
+					<div id="gauge-5" style="height: 250px; margin: 0 30px;"></div>
+				</div>
+			</div>
+		</div>
+	<div class="row">
+		<div class="col-sm-3">
+			
+			<div class="xe-widget xe-progress-counter xe-progress-counter-pink" data-count=".num" data-from="0" data-to="274.6" data-duration="2">
+				
+				<div class="xe-background">
+					<i class="linecons-lightbulb"></i>
+				</div>
+				
+				<div class="xe-upper">
+					<div class="xe-icon">
+						<i class="linecons-lightbulb"></i>
+					</div>
+					<div class="xe-label">
+						<span>City Crime Rate</span>
+						<strong class="num">0</strong>
+					</div>
+				</div>
+				
+				<div class="xe-progress">
+					<span class="xe-progress-fill" data-fill-from="0" data-fill-to="80" data-fill-unit="%" data-fill-property="width" data-fill-duration="2" data-fill-easing="true"></span>
+				</div>
+				
+				<div class="xe-lower">
+					<span>Previous Year</span>
+					<strong>285</strong>
+				</div>
+				<div class="label label-success">Exceeds Target</div>
+			</div>
+			
+		</div>
+		<div class="col-sm-3">
+			
+			<div class="xe-widget xe-progress-counter xe-progress-counter-turquoise" data-count=".num" data-from="0" data-to="3188" data-suffix="M" data-duration="3">
+				
+				<div class="xe-background">
+					<i class="linecons-money"></i>
+				</div>
+				
+				<div class="xe-upper">
+					<div class="xe-icon">
+						<i class="linecons-money"></i>
+					</div>
+					<div class="xe-label">
+						<span>Firefighters on Payroll</span>
+						<strong class="num">0</strong>
+					</div>
+				</div>
+				
+				<div class="xe-progress">
+					<span class="xe-progress-fill" data-fill-from="0" data-fill-to="89" data-fill-unit="%" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
+				</div>
+				
+				<div class="xe-lower">
+					<span>Percent to Goal</span>
+					<strong>89% (3600)</strong>
+				</div>
+				<div class="label label-success">On Track</div>
+				
+			</div>
+			
+		</div>
+		<div class="col-sm-3">
+			
+			<div class="xe-widget xe-progress-counter xe-progress-counter-info" data-count=".num" data-from="0" data-to="9890" data-suffix="" data-duration="4">
+				
+				<div class="xe-background">
+					<i class="linecons-t-shirt"></i>
+				</div>
+				
+				<div class="xe-upper">
+					<div class="xe-icon">
+						<i class="linecons-t-shirt"></i>
+					</div>
+					<div class="xe-label">
+						<span>Police Officers on Force</span>
+						<strong class="num">0</strong>
+					</div>
+				</div>
+				
+				<div class="xe-progress">
+					<span class="xe-progress-fill" data-fill-from="0" data-fill-to="98" data-fill-unit="%" data-fill-property="width" data-fill-duration="4" data-fill-easing="true"></span>
+				</div>
+				
+				<div class="xe-lower">
+					<span>Percent to Goal</span>
+					<strong>98% (10023)</strong>
+				</div>
+				<div class="label label-success">On Track</div>
+				
+			</div>
+			
+		</div>
+		<div class="col-sm-3">
+			
+			<div class="xe-widget xe-progress-counter xe-progress-counter-red" data-count=".num" data-from="100" data-to="658" data-duration="3">
+				
+				<div class="xe-background">
+					<i class="linecons-shop"></i>
+				</div>
+				
+				<div class="xe-upper">
+					<div class="xe-icon">
+						<i class="linecons-shop"></i>
+					</div>
+					<div class="xe-label">
+						<span>Applicants Using Expedited Hiring Process</span>
+						<strong class="num">0</strong>
+					</div>
+				</div>
+				
+				<div class="xe-progress">
+					<span class="xe-progress-fill" data-fill-from="0" data-fill-to="300" data-fill-unit="" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
+				</div>
+				
+				<div class="xe-lower">
+					<span>Month over month</span>
+					<strong>TBD</strong>
+				</div>
+				<div class="label label-default">No target</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Crime in Los Angeles</h3>
+					<div class="panel-options">
+						<a href="#" data-toggle="panel">
+							<span class="collapse-icon">&ndash;</span>
+							<span class="expand-icon">+</span>
+						</a>
+						<a href="#" data-toggle="remove">
+							&times;
+						</a>
+					</div>
+				</div>
+				<div class="panel-body">
+			<iframe width='100%' height='400' frameborder='0' src='http://abhinemani.cartodb.com/viz/2a62dc2e-94a7-11e4-9261-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		</div>
+	</div>
+
+			
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+				
+				<div class="footer-inner">
+				
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2014 
+						<strong>City of Los Angeles</strong> 
+						
+					</div>
+					
+					
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+					
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+		</div>
+	
+			
+
+	</div>
+	
+
+	
+	<!-- Page Loading Overlay -->
+	<div class="page-loading-overlay">
+		<div class="loader-2"></div>
+	</div>
+	
+
+
+
+	<!-- Bottom Scripts -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
+	<script src="assets/js/resizeable.js"></script>
+	<script src="assets/js/joinable.js"></script>
+	<script src="assets/js/xenon-api.js"></script>
+	<script src="assets/js/xenon-toggles.js"></script>
+
+
+	<!-- Imported scripts on this page -->
+	<script src="assets/js/xenon-widgets.js"></script>
+	<script src="assets/js/devexpress-web-14.1/js/globalize.min.js"></script>
+	<script src="assets/js/devexpress-web-14.1/js/dx.chartjs.js"></script>
+	<script src="assets/js/toastr/toastr.min.js"></script>
+
+
+	<!-- JavaScripts initializations and stuff -->
+	<script src="assets/js/xenon-custom.js"></script>
+
+</body>
+</html>
