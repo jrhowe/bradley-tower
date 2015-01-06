@@ -545,7 +545,143 @@
 			</div>
 			
 		</div>
+		
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Deep Dive: DWP Wait Times</h3>
+					<div class="panel-options">
+						<a href="#" data-toggle="panel">
+							<span class="collapse-icon">&ndash;</span>
+							<span class="expand-icon">+</span>
+						</a>
+						<a href="#" data-toggle="remove">
+							&times;
+						</a>
+					</div>
+				</div>
 			
+				
+					<div class="panel-body">
+						<div class="col-sm-9">
+							
+						<script type="text/javascript">
+							jQuery(document).ready(function($)
+							{
+								if( ! $.isFunction($.fn.dxChart))
+									return;
+									
+								var dataSource = [
+{month: 'July 2013', waittime: 6.08 },
+{month: 'August 2013', waittime: 14.55 },
+{month: 'September 2013', waittime: 17.34 },
+{month: 'October 2013', waittime: 25.89 },
+{month: 'November 2013', waittime: 31.58 },
+{month: 'December 2013', waittime: 16.91 },
+{month: 'January 2014', waittime: 20.09 },
+{month: 'February 2014', waittime: 31.59 },
+{month: 'March 2014', waittime: 33.52 },
+{month: 'April 2014', waittime: 21.01 },
+{month: 'May 2014', waittime: 18.31 },
+{month: 'June 2014', waittime: 32.9 },
+{month: 'July 2014', waittime: 40.43 },
+{month: 'August 2014', waittime: 39.65 },
+{month: 'September 2014', waittime: 15.66 },
+{month: 'October 2014', waittime: 8.78 },
+
+								];
+								
+								$("#bar-3").dxChart({
+									dataSource: dataSource,
+									commonSeriesSettings: {
+										argumentField: "month"
+									},
+									series: [
+										{ valueField: "waittime", name: "DWP Wait Times (Minutes)", color: "#40bbea" },
+									],
+									argumentAxis:{
+										grid:{
+											visible: true
+										}
+									},
+									tooltip:{
+										enabled: true
+									},
+									title: "DWP Call Wait Time",
+									legend: {
+										verticalAlignment: "bottom",
+										horizontalAlignment: "center"
+									},
+									commonPaneSettings: {
+										border:{
+											visible: true,
+											right: false
+										}	   
+									}
+								});
+							});
+						</script>
+						<div id="bar-3" style="height: 300px; width: 100%;"></div>
+					
+					
+			</div>
+			<div class="col-sm-3">
+				<div class="xe-widget xe-todo-list xe-todo-list-pink">
+					<div class="xe-header">
+						<div class="xe-icon">
+							<i class="fa-file-text-o"></i>
+						</div>
+						<div class="xe-label">
+							<span>Goals for Improvement</span>
+							<strong>Wait Time Milestones</strong>
+						</div>
+					</div>
+					<div class="xe-body">
+						
+						<ul class="list-unstyled">
+							<li class="done">
+								<label>
+									<input type="checkbox" class="cbr" />
+									<span>Sustainability Plan</span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" class="cbr" />
+									<span>Slicing</span>
+								</label>
+							</li>
+							
+							<li>
+								<label>
+									<input type="checkbox" class="cbr" />
+									<span>WooCommerce</span>
+								</label>
+							</li>
+							<h5><strong>MOED</strong></h5>
+							<li>
+								<label>
+									<input type="checkbox" class="cbr" />
+									<span>Programming</span>
+								</label>
+							</li>
+							<h5><strong>MOED</strong></h5>
+							<li>
+								<label>
+									<input type="checkbox" class="cbr" />
+									<span>SEO Optimize</span>
+								</label>
+							</li>
+						</ul>
+						
+					</div>
+										
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
 			<!-- Main Footer -->
 			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
 			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
