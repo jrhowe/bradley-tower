@@ -293,8 +293,8 @@
 							line: {width: 1, hoverStyle: {width: 1}}
 						},
 						series: [
-							{ valueField: "part1", name: "Pageviews", color: "#68b828" },
-							{ valueField: "part2", name: "Visitors", color: "#eeeeee" },
+							{ valueField: "part1", name: "Pageviews", color: "#7c38bc" },
+							{ valueField: "part2", name: "Visitors", color: "#00b19d" },
 						],
 						legend: {
 							position: 'inside',
@@ -336,7 +336,7 @@
 							valueField: "sales",
 							name: "Sales",
 							type: "bar",
-							color: '#7c38bc'
+							color: '#68b828'
 						},
 						commonAxisSettings: {
 							label: {
@@ -426,7 +426,7 @@
 			<div class="row">
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-pink" data-count=".num" data-from="0" data-to="1.2" data-duration="2">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="120" data-to="72" data-suffix=" seconds" data-duration="2">
 						
 						<div class="xe-background">
 							<i class="linecons-lightbulb"></i>
@@ -443,20 +443,20 @@
 						</div>
 						
 						<div class="xe-progress">
-							<span class="xe-progress-fill" data-fill-from="0" data-fill-to="60" data-fill-unit="%" data-fill-property="width" data-fill-duration="2" data-fill-easing="true"></span>
+							<span class="xe-progress-fill" data-fill-from="100" data-fill-to="60" data-fill-unit="%" data-fill-property="width" data-fill-duration="2" data-fill-easing="true"></span>
 						</div>
 						
 						<div class="xe-lower">
-							<span>Target Under 2min</span>
-							<strong>60% ahead of target</strong>
+							<span>Nov '14</span>
+							<strong>M.O.M.: 0%</strong>
 						</div>
-						<div class="label label-success">Exceeds Target</div>
+						<div class="label label-default">Target: 120</div>
 					</div>
 					
 				</div>
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-turquoise" data-count=".num" data-from="0" data-to="345.9" data-suffix="M" data-duration="3">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="0" data-to="345.9" data-suffix="M" data-prefix="$" data-duration="3">
 						
 						<div class="xe-background">
 							<i class="linecons-money"></i>
@@ -477,8 +477,8 @@
 						</div>
 						
 						<div class="xe-lower">
-							<span>Quarter over quarter</span>
-							<strong>-2%</strong>
+							<span>Q2 FY15</span>
+							<strong>Q.o.Q.: -2%</strong>
 						</div>
 						<div class="label label-default">No Target</div>
 						
@@ -487,7 +487,7 @@
 				</div>
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-info" data-count=".num" data-from="0" data-to="55477" data-suffix="" data-duration="4">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-grey" data-count=".num" data-from="0" data-to="55477" data-suffix="" data-duration="4">
 						
 						<div class="xe-background">
 							<i class="linecons-t-shirt"></i>
@@ -508,8 +508,8 @@
 						</div>
 						
 						<div class="xe-lower">
-							<span>New Hires p/ Month</span>
-							<strong>TBD</strong>
+							<span>Nov '14</span>
+							<strong>M.o.M.: Unknown</strong>
 						</div>
 						<div class="label label-default">No Target</div>
 						
@@ -518,7 +518,7 @@
 				</div>
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-red" data-count=".num" data-from="100" data-to="15" data-duration="3">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="11" data-to="15" data-duration="3">
 						
 						<div class="xe-background">
 							<i class="linecons-shop"></i>
@@ -539,10 +539,10 @@
 						</div>
 						
 						<div class="xe-lower">
-							<span>Month Over Month Growth</span>
-							<strong>36.4%</strong>
+							<span>Dec '14</span>
+							<strong>M.o.M.: +36.4%</strong>
 						</div>
-						<div class="label label-success">At Target (15)</div>
+						<div class="label label-default">Goal: 15 by FY15</div>
 						
 					</div>
 					
@@ -553,29 +553,31 @@
 			<div class="row">
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-counter" data-count=".num" data-from="0" data-to="4" data-suffix="" data-duration="2">
+					<div class="xe-widget xe-counter xe-counter-red" data-count=".num" data-from="0" data-to="4" data-suffix="" data-duration="2">
 						<div class="xe-icon">
 							<i class="linecons-cloud"></i>
 						</div>
 						<div class="xe-label">
 							<strong class="num">0.0%</strong>
-							<span>Departments on COMPStat</span>
+							<span>Departments on COMPStat (Dec '14)</span>
+							<span>M.o.M.: 0</span>
 						</div>
-						<div class="label label-danger">Off Target</div>
+						<div class="label label-default">Target 20 by FY15</div>
 						
 					</div>
 					
 
 					
-					<div class="xe-widget xe-counter xe-counter-info" >
+					<div class="xe-widget xe-counter xe-counter-green" >
 						<div class="xe-icon">
 							<i class="linecons-camera"></i>
 						</div>
 						<div class="xe-label">
 							<strong class="num">AA-</strong>
 							<span>Bond Rating  (Positive Out.)</span>
+							<span>Y.o.Y.: Neutral to Positive Outlook</span>
 						</div>
-						<div class="label label-success">Positive Growth</div>
+						<div class="label label-default">No Target</div>
 						
 					</div>
 					
@@ -584,7 +586,7 @@
 					
 					<div class="chart-item-bg">
 						<div class="chart-label">
-							<div class="h3 text-secondary text-bold"  data-count="this" data-from="0.00" data-to="296541" data-suffix=" December" data-duration="1">0.00%</div>
+							<div class="h3 text-bold"  data-count="this" data-from="0.00" data-to="296541" data-suffix=" December" data-duration="1">0.00%</div>
 							<span class="text-medium text-muted">Unique visitors: LACity.org</span>
 						</div>
 						<div id="pageviews-visitors-chart" style="height: 220px;"></div>
@@ -592,25 +594,27 @@
 					
 				</div>
 				<div class="col-sm-3">
-					<div class="xe-widget xe-counter xe-counter-purple" data-count=".num" data-from="1" data-to="4.5" data-suffix="k" data-duration="3" data-easing="false">
+					<div class="xe-widget xe-counter xe-counter-green" data-count=".num" data-from="1" data-to="4.5" data-suffix="k" data-duration="3" data-easing="false">
 						<div class="xe-icon">
 							<i class="linecons-user"></i>
 						</div>
 						<div class="xe-label">
 							<strong class="num">1k</strong>
-							<span>Visitors to Open Data Portal</span>
+							<span>Visitors to Open Data Portal (Nov '15)</span>
+							<span>M.o.M.: -9.3%</span>
+							
 						</div>
-						<div class="label label-success">On Target</div>
+						<div class="label label-default">Goal: 7K by FY15</div>
 						
 					</div>
 					<div class="chart-item-bg">
 						<div class="chart-label chart-label-small">
-							<div class="h4 text-purple text-bold"  data-count="this" data-from="0.00" data-to="290" data-suffix="" data-duration="1.5">0.00%</div>
+							<div class="h4 text-green text-bold"  data-count="this" data-from="0.00" data-to="290" data-suffix="" data-duration="1.5">0.00%</div>
 							<span class="text-small text-upper text-muted">Open Data Sets </span>
 						</div>
 						<div id="server-uptime-chart" style="height: 100px;"></div>
 						<br>
-						<div class="label label-success">(#3 National Ranking)</div>
+						<div class="label label-default">(#3 National Ranking)</div>
 					</div>
 					
 					
@@ -620,7 +624,7 @@
 			<div class="row">
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-orange" data-count=".num" data-from="0" data-to="67.40" data-suffix="%" data-duration="2">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-red" data-count=".num" data-from="0" data-to="67.40" data-suffix="%" data-duration="2">
 						
 						<div class="xe-background">
 							<i class="linecons-money"></i>
@@ -641,8 +645,8 @@
 						</div>
 						
 						<div class="xe-lower">
-							<span>Month over month</span>
-							<strong>-1.3%</strong>
+							<span>FY14</span>
+							<strong>Y.o.Y.: -1.3%</strong>
 						</div>
 						<div class="label label-default">No target</div>
 					</div>
@@ -650,7 +654,7 @@
 				</div>
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-yellow" data-count=".num" data-from="0" data-to="80.80" data-suffix="%" data-duration="3">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="0" data-to="80.80" data-suffix="%" data-duration="3">
 						
 						<div class="xe-background">
 							<i class="linecons-paper-plane"></i>
@@ -671,8 +675,8 @@
 						</div>
 						
 						<div class="xe-lower">
-							<span>Month over month</span>
-							<strong>+3.5%</strong>
+							<span>FY14</span>
+							<strong>Y.o.Y.: +3.5%</strong>
 						</div>
 						<div class="label label-default">No target</div>
 						
@@ -682,7 +686,7 @@
 				</div>
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-danger" data-count=".num" data-from="0" data-to="165" data-suffix="M" data-duration="4">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="0" data-to="165" data-suffix="M" data-duration="4">
 						
 						<div class="xe-background">
 							<i class="linecons-money"></i>
@@ -735,13 +739,14 @@
 						</div>
 						
 						<div class="xe-progress">
-							<span class="xe-progress-fill" data-fill-from="89" data-fill-to="40" data-fill-unit="%" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
+							<span class="xe-progress-fill" data-fill-from="0" data-fill-to="40" data-fill-unit="%" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
 						</div>
 						
 						<div class="xe-lower">
-							<span>Staffed Trained p/ Month</span>
-							<strong>TBD</strong>
+							<span>Dec '15</span>
+							<strong>M.o.M.: TBD</strong>
 						</div>
+						<div class="label label-default">Target 500 by CY15</div>
 						
 					</div>
 					
@@ -756,38 +761,39 @@
 			
 			<div class="row">
 				<div class="col-sm-3">
-					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-purple" data-count=".num" data-from="0" data-to="11938" data-suffix="" data-duration="2">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="0" data-to="57227" data-suffix="" data-duration="3">
 						
 						<div class="xe-background">
-							<i class="linecons-money"></i>
+							<i class="linecons-user"></i>
 						</div>
 						
 						<div class="xe-upper">
 							<div class="xe-icon">
-								<i class="linecons-videocam"></i>
+								<i class="linecons-user"></i>
 							</div>
 							<div class="xe-label">
-								<span>Film Production Days (FYTD)</span>
+								<span>New Resident Jobs Created</span>
 								<strong class="num">0</strong>
 							</div>
 						</div>
 						
 						<div class="xe-progress">
-							<span class="xe-progress-fill" data-fill-from="0" data-fill-to="22" data-fill-unit="%" data-fill-property="width" data-fill-duration="2" data-fill-easing="true"></span>
+							<span class="xe-progress-fill" data-fill-from="0" data-fill-to="49" data-fill-unit="%" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
 						</div>
 						
 						<div class="xe-lower">
-							<span>Goal: 55,000</span>
-							<strong>22%</strong>
+							<span>Oct '14</span>
+							<strong>Y.o.Y.: TBD</strong>
 						</div>
-						<div class="label label-danger">Off target</div>
+						<div class="label label-default">Goal: 128K by FY17</div>
+						
 					</div>
+					
 					
 				</div>
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-turquoise" data-count=".num" data-from="0" data-to="1597640" data-suffix="" data-duration="3">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="0" data-to="1597640" data-suffix="" data-duration="3">
 						
 						<div class="xe-background">
 							<i class="linecons-user"></i>
@@ -804,14 +810,14 @@
 						</div>
 						
 						<div class="xe-progress">
-							<span class="xe-progress-fill" data-fill-from="0" data-fill-to="99" data-fill-unit="%" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
+							<span class="xe-progress-fill" data-fill-from="0" data-fill-to="94" data-fill-unit="%" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
 						</div>
 						
 						<div class="xe-lower">
-							<span>Year over Year</span>
-							<strong>+1.4%</strong>
+							<span>Oct '14</span>
+							<strong>Y.o.Y.: +1.4%</strong>
 						</div>
-						<div class="label label-default">No target</div>
+						<div class="label label-default">2005 high: 1.7M</div>
 						
 						
 					</div>
@@ -819,7 +825,7 @@
 				</div>
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-info" data-count=".num" data-from="0" data-to="1840609" data-suffix="" data-duration="4">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="0" data-to="1840609" data-suffix="" data-duration="4">
 						
 						<div class="xe-background">
 							<i class="linecons-user"></i>
@@ -836,22 +842,22 @@
 						</div>
 						
 						<div class="xe-progress">
-							<span class="xe-progress-fill" data-fill-from="0" data-fill-to="99" data-fill-unit="%" data-fill-property="width" data-fill-duration="4" data-fill-easing="true"></span>
+							<span class="xe-progress-fill" data-fill-from="0" data-fill-to="98" data-fill-unit="%" data-fill-property="width" data-fill-duration="4" data-fill-easing="true"></span>
 						</div>
 						
 						<div class="xe-lower">
-							<span>Year over year</span>
-							<strong>+3%</strong>
+							<span>Oct '14</span>
+							<strong>Y.o.Y: +3%</strong>
 							
 						</div>
-						<div class="label label-default">No target</div>
+						<div class="label label-default">2007 high: 1.9M</div>
 						
 					</div>
 					
 				</div>
 				<div class="col-sm-3">
 					
-					<div class="xe-widget xe-progress-counter xe-progress-counter-red" data-count=".num" data-from="0" data-to="39"  data-fill-unit="$" data-prefix="$" ata-suffix="M" data-duration="3">
+					<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="0" data-to="39"  data-fill-unit="$" data-prefix="$" data-suffix="M" data-duration="3">
 						
 						<div class="xe-background">
 							<i class="linecons-truck"></i>
@@ -872,10 +878,10 @@
 						</div>
 						
 						<div class="xe-lower">
-							<span>Progress Towards Goal ($45M)</span>
-							<strong>87%</strong>
+							<span>Nov '14</span>
+							<strong>M.o.M.: Unknown</strong>
 						</div>
-						<div class="label label-success">On target</div>
+						<div class="label label-default">Goal: $45M</div>
 						
 					</div>
 					
@@ -922,7 +928,7 @@
 							<strong class="num">0.0%</strong>
 							<span>LA County Median Household Income</span>
 						</div>
-						<div class="label label-danger">Off Target</div>
+						<div class="label label-default">Off Target</div>
 						
 					</div>
 					
@@ -966,7 +972,7 @@
 							<strong class="num">0</strong>
 							<span>TEU Cargo Containers through POLA</span>
 						</div>
-						<div class="label label-success">On Track (97%)</div>
+						<div class="label label-default">On Track (97%)</div>
 						
 					</div>
 					
@@ -995,7 +1001,7 @@
 							<strong class="num">0</strong>
 							<span>Passengers through LAX (CYTD)</span>
 						</div>
-						<div class="label label-success">Positive Growth</div>
+						<div class="label label-default">Positive Growth</div>
 						
 					</div>
 					
@@ -1105,7 +1111,7 @@
 			</div>
 	<div class="row">
 		
-		<div class="col-sm-12">
+		<div class="col-sm-9">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Veterans</h3>
@@ -1202,9 +1208,64 @@
 			</div>
 		</div>
 	</div>		
-
-			
-		</div>
+				<div class="col-sm-3">
+					
+					<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="0" data-to="11035" data-suffix="" data-duration="3">
+						
+						<div class="xe-background">
+							<i class="linecons-user"></i>
+						</div>
+						
+						<div class="xe-upper">
+							<div class="xe-icon">
+								<i class="linecons-user"></i>
+							</div>
+							<div class="xe-label">
+								<span>Housing Permits Issued</span>
+								<strong class="num">0</strong>
+							</div>
+						</div>
+						
+						<div class="xe-progress">
+							<span class="xe-progress-fill" data-fill-from="0" data-fill-to="11" data-fill-unit="%" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
+						</div>
+						
+						<div class="xe-lower">
+							<span>Oct '14</span>
+							<strong>M.o.M.: Unknown</strong>
+						</div>
+						<div class="label label-default">Goal: 100K by FY21</div>
+						
+					</div>
+					<div class="xe-widget xe-progress-counter xe-progress-counter-red" data-count=".num" data-from="0" data-to="11938" data-suffix="" data-duration="2">
+						
+						<div class="xe-background">
+							<i class="linecons-money"></i>
+						</div>
+						
+						<div class="xe-upper">
+							<div class="xe-icon">
+								<i class="linecons-videocam"></i>
+							</div>
+							<div class="xe-label">
+								<span>Film Production Days (FYTD)</span>
+								<strong class="num">0</strong>
+							</div>
+						</div>
+						
+						<div class="xe-progress">
+							<span class="xe-progress-fill" data-fill-from="0" data-fill-to="22" data-fill-unit="%" data-fill-property="width" data-fill-duration="2" data-fill-easing="true"></span>
+						</div>
+						
+						<div class="xe-lower">
+							<span>Oct '14</span>
+							<strong>M.o.M.: Unknown</strong>
+						</div>
+						<div class="label label-default">Goal: 55,000 by FY15</div>
+					</div>
+					
+				</div>
+</div>
 			
 
 
@@ -1469,7 +1530,7 @@
 					<span>Percent to Goal</span>
 					<strong>89% (3600)</strong>
 				</div>
-				<div class="label label-success">On Track</div>
+				<div class="label label-default">On Track</div>
 				
 			</div>
 			
@@ -1499,7 +1560,7 @@
 					<span>Percent to Goal</span>
 					<strong>98% (10023)</strong>
 				</div>
-				<div class="label label-success">On Track</div>
+				<div class="label label-default">On Track</div>
 				
 			</div>
 			
@@ -1558,8 +1619,8 @@
 						<span>2015 Goal: 7,500</span>
 						<strong>15.2%</strong>
 					</div>
-					<div class="label label-danger">Off target</div>
-					<div class="label label-danger">Off target</div>
+					<div class="label label-default">Off target</div>
+					<div class="label label-default">Off target</div>
 					
 				</div>
 				
@@ -1590,7 +1651,7 @@
 						<span>2015 Goal: 2,400</span>
 						<strong>38%</strong>
 					</div>
-					<div class="label label-success">On track</div>
+					<div class="label label-default">On track</div>
 					
 					
 				</div>
@@ -1623,7 +1684,7 @@
 						<strong>+200%</strong>
 						
 					</div>
-					<div class="label label-success">Exceeds target</div>
+					<div class="label label-default">Exceeds target</div>
 					
 				</div>
 				
@@ -1654,7 +1715,7 @@
 						<span>Progress Towards Goal (75%)</span>
 						<strong>93.1%</strong>
 					</div>
-					<div class="label label-success">On target</div>
+					<div class="label label-default">On target</div>
 					
 				</div>
 				

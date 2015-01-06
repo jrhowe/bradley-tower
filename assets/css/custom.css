@@ -9,3 +9,6 @@ body {
 
 a {
 }
+
+.xe-widget.xe-progress-counter.xe-progress-counter-grey {background: #999999;}
+.xe-widget.xe-progress-counter.xe-progress-counter-grey .xe-upper {background: transparent;}
