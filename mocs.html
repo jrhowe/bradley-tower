@@ -572,7 +572,7 @@
 									return;
 									
 								var dataSource = [
-{month: 'July 2013', waittime: 6.08 },
+{month: 'July 2013', waittime: 6.08, goal: 3 },
 {month: 'August 2013', waittime: 14.55 },
 {month: 'September 2013', waittime: 17.34 },
 {month: 'October 2013', waittime: 25.89 },
@@ -587,7 +587,7 @@
 {month: 'July 2014', waittime: 40.43 },
 {month: 'August 2014', waittime: 39.65 },
 {month: 'September 2014', waittime: 15.66 },
-{month: 'October 2014', waittime: 8.78 },
+{month: 'October 2014', waittime: 8.78, goal: 3 },
 
 								];
 								
@@ -598,6 +598,8 @@
 									},
 									series: [
 										{ valueField: "waittime", name: "DWP Wait Times (Minutes)", color: "#40bbea" },
+										{ valueField: "goal", name: "Goal", color: "#990000" },
+										
 									],
 									argumentAxis:{
 										grid:{
@@ -621,7 +623,7 @@
 								});
 							});
 						</script>
-						<div id="bar-3" style="height: 300px; width: 100%;"></div>
+						<div id="bar-3" style="height: 400px; width: 100%;"></div>
 					
 					
 			</div>
@@ -641,31 +643,22 @@
 						<ul class="list-unstyled">
 							<li class="done">
 								<label>
-									<input type="checkbox" class="cbr" />
-									<span>Sustainability Plan</span>
+									<div class="cbr-replaced cbr-checked"><div class="cbr-input"><input type="checkbox" class="cbr cbr-done" checked=""></div><div class="cbr-state"><span></span></div></div>
+									<span>Increase Number of Operators</span>
 								</label>
 							</li>
-							<li>
+							<li class="done">
 								<label>
-									<input type="checkbox" class="cbr" />
-									<span>Slicing</span>
+									<div class="cbr-replaced cbr-checked"><div class="cbr-input"><input type="checkbox" class="cbr cbr-done" checked=""></div><div class="cbr-state"><span></span></div></div>
+									<span>Deploy Mobile App</span>
 								</label>
 							</li>
-							
-							<li>
+							<li class="done">
 								<label>
-									<input type="checkbox" class="cbr" />
-									<span>WooCommerce</span>
+									<div class="cbr-replaced cbr-checked"><div class="cbr-input"><input type="checkbox" class="cbr cbr-done" checked=""></div><div class="cbr-state"><span></span></div></div>
+									<span>Retrain Operators</span>
 								</label>
 							</li>
-							<h5><strong>MOED</strong></h5>
-							<li>
-								<label>
-									<input type="checkbox" class="cbr" />
-									<span>Programming</span>
-								</label>
-							</li>
-							<h5><strong>MOED</strong></h5>
 							<li>
 								<label>
 									<input type="checkbox" class="cbr" />
