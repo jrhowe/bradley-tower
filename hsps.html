@@ -240,400 +240,325 @@
 	
 		<div class="main-content">
 					
-	
-	
 
-	<div class="row">
+	
+		<h1 class="bg-info">Homeland Security & Public Safety</h1>
+		<div class="row">
 		
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">LAPD & LAFP Response Times</h3>
-					<div class="panel-options">
-						<a href="#" data-toggle="panel">
-							<span class="collapse-icon">&ndash;</span>
-							<span class="expand-icon">+</span>
-						</a>
-						<a href="#" data-toggle="remove">
-							&times;
-						</a>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">LAPD & LAFP Response Times (Nov '14)</h3>
+						<div class="panel-options">
+							<a href="#" data-toggle="panel">
+								<span class="collapse-icon">&ndash;</span>
+								<span class="expand-icon">+</span>
+							</a>
+							<a href="#" data-toggle="remove">
+								&times;
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="panel-body">	
-				<div class="col-sm-3">
-					<script type="text/javascript">
-						jQuery(document).ready(function($)
-						{
-							if( ! $.isFunction($.fn.dxChart))
-								return;
+					<div class="panel-body">	
+					<div class="col-sm-3">
+						<script type="text/javascript">
+							jQuery(document).ready(function($)
+							{
+								if( ! $.isFunction($.fn.dxChart))
+									return;
 				
-							var gauge = $('#gauge-2').dxCircularGauge({
-								scale: {
-									startValue: 0,
-									endValue: 40,
-									majorTick: {
-										color: '#1A1100',
-										tickInterval: 10
+								var gauge = $('#gauge-2').dxCircularGauge({
+									scale: {
+										startValue: 0,
+										endValue: 40,
+										majorTick: {
+											color: '#1A1100',
+											tickInterval: 5
+										},
+										minorTick: {
+											color: '#1A1100',
+											visible: true,
+											tickInterval: 2
+										}
 									},
-									minorTick: {
-										color: '#1A1100',
-										visible: true,
-										tickInterval: 2
-									}
-								},
-								rangeContainer: {
-									backgroundColor: 'none'
-								},
-							    tooltip: {
-							            enabled: true,
-								},
-								title: {
-									text: 'LAFD Call Transfer Time (Seconds)',
-									font: { size: 12 }
-								},
-						        valueIndicator: {
-						            color: 'green'
-						        },
-								value: 30,
-								subvalues: [30]
-								
-								
-							}).dxCircularGauge('instance');
-			
-							$("#gauge-2-randomize").on('click', function(ev)
-							{
-								ev.preventDefault();
-				
-								gauge.value(between(0, 1000));
-				
-							});
-			
-							$("#gauge-2-res").on('click', function(ev)
-							{
-								ev.preventDefault();
-				
-								gauge.value(0);
-							});
-						});
-					</script>
-					<div id="gauge-2" style="height: 250px; margin: 0 30px;"></div>
-				</div>
-				<div class="col-sm-3">
-					<script type="text/javascript">
-						jQuery(document).ready(function($)
-						{
-							if( ! $.isFunction($.fn.dxChart))
-								return;
-				
-							var gauge = $('#gauge-3').dxCircularGauge({
-								scale: {
-									startValue: 0,
-									endValue: 400,
-									majorTick: {
-										color: '#1A1100',
-										tickInterval: 50
+									rangeContainer: {
+										backgroundColor: 'none'
 									},
-									minorTick: {
-										color: '#1A1100',
-										visible: true,
-										tickInterval: 25
-									}
-								},
-								rangeContainer: {
-									backgroundColor: 'none'
-								},
-						        valueIndicator: {
-						            color: 'green'
-						        },
-							    tooltip: {
-							            enabled: true,
-								},
-								title: {
-									text: 'LAFD Travel Time (Fire) (seconds)',
-									font: { size: 12 }
-								},
-								value: 306,
-								subvalues: [290]
-							}).dxCircularGauge('instance');
-			
-							$("#gauge-2-randomize").on('click', function(ev)
-							{
-								ev.preventDefault();
-				
-								gauge.value(between(0, 1000));
-				
-							});
-			
-							$("#gauge-2-res").on('click', function(ev)
-							{
-								ev.preventDefault();
-				
-								gauge.value(0);
-							});
-						});
-					</script>
-					<div id="gauge-3" style="height: 250px; margin: 0 30px;"></div>
-				</div>
-				<div class="col-sm-3">
-					<script type="text/javascript">
-						jQuery(document).ready(function($)
-						{
-							if( ! $.isFunction($.fn.dxChart))
-								return;
-				
-							var gauge = $('#gauge-4').dxCircularGauge({
-								scale: {
-									startValue: 0,
-									endValue: 300,
-									majorTick: {
-										color: '#1A1100',
-										tickInterval: 50
+								    tooltip: {
+								            enabled: true,
 									},
-									minorTick: {
-										color: '#1A1100',
-										visible: true,
-										tickInterval: 10
-									}
-								},
-							    tooltip: {
-							            enabled: true,
-								},
-								rangeContainer: {
-									backgroundColor: 'none'
-								},
-								title: {
-									text: 'LAFD Travel Time (EMS) (seconds)',
-									font: { size: 12 }
-								},
-								value: 286,
-						        valueIndicator: {
-						            color: 'red'
-						        },
-								subvalues: [271]
-								
-							}).dxCircularGauge('instance');
-			
-							$("#gauge-2-randomize").on('click', function(ev)
-							{
-								ev.preventDefault();
-				
-								gauge.value(between(0, 1000));
-				
-							});
-			
-							$("#gauge-2-res").on('click', function(ev)
-							{
-								ev.preventDefault();
-				
-								gauge.value(0);
-							});
-						});
-					</script>
-					<div id="gauge-4" style="height: 250px; margin: 0 30px;"></div>
-				</div>
-				<div class="col-sm-3">
-					<script type="text/javascript">
-						jQuery(document).ready(function($)
-						{
-							if( ! $.isFunction($.fn.dxChart))
-								return;
-				
-							var gauge = $('#gauge-5').dxCircularGauge({
-								scale: {
-									startValue: 0,
-									endValue: 100,
-									majorTick: {
-										color: '#1A1100',
-										tickInterval: 10
+									title: {
+										text: 'LAFD Call Transfer Time (Seconds)',
+										font: { size: 12 }
 									},
-									minorTick: {
-										color: '#1A1100',
-										visible: true,
-										tickInterval: 5
-									}
-								},
-								rangeContainer: {
-									backgroundColor: 'none'
-								},
-							    tooltip: {
-							            enabled: true,
-								},
-								title: {
-									text: 'EMD Call Processing Time (seconds)',
-									font: { size: 12 }
-								},
-						        valueIndicator: {
-						            color: 'red'
-						        },
-								value: 80,
-								subvalues: [60]
+									subtitle: {
+										text: '30 seconds (At target)',
+										font: {
+											size: 10,
+											color: 'grey',
+										},       
+									},
+							        valueIndicator: {
+							            color: 'green'
+							        },
+									value: 30,
+									subvalues: [30]
+								}).dxCircularGauge('instance');
+							});
+						</script>
+						<div id="gauge-2" style="height: 250px; margin: 0 30px;"></div>
+					</div>
+					<div class="col-sm-3">
+						<script type="text/javascript">
+							jQuery(document).ready(function($)
+							{
+								if( ! $.isFunction($.fn.dxChart))
+									return;
+				
+								var gauge = $('#gauge-3').dxCircularGauge({
+									scale: {
+										startValue: 0,
+										endValue: 400,
+										majorTick: {
+											color: '#1A1100',
+											tickInterval: 50
+										},
+										minorTick: {
+											color: '#1A1100',
+											visible: true,
+											tickInterval: 25
+										}
+									},
+									rangeContainer: {
+										backgroundColor: 'none'
+									},
+							        valueIndicator: {
+							            color: 'red'
+							        },
+								    tooltip: {
+								            enabled: true,
+									},
+									title: {
+										text: 'LAFD Travel Time (Fire)',
+										font: { size: 12 }
+									},
+									subtitle: {
+										text: '306 seconds (Over target: 290)',
+										font: {
+											size: 10,
+											color: 'grey',
+										},       
+									},
+									value: 306,
+									subvalues: [290]
+								}).dxCircularGauge('instance');
+							});
+						</script>
+						<div id="gauge-3" style="height: 250px; margin: 0 30px;"></div>
+					</div>
+					<div class="col-sm-3">
+						<script type="text/javascript">
+							jQuery(document).ready(function($)
+							{
+								if( ! $.isFunction($.fn.dxChart))
+									return;
+				
+								var gauge = $('#gauge-4').dxCircularGauge({
+									scale: {
+										startValue: 0,
+										endValue: 300,
+										majorTick: {
+											color: '#1A1100',
+											tickInterval: 50
+										},
+										minorTick: {
+											color: '#1A1100',
+											visible: true,
+											tickInterval: 10
+										}
+									},
+								    tooltip: {
+								            enabled: true,
+									},
+									rangeContainer: {
+										backgroundColor: 'none'
+									},
+									title: {
+										text: 'LAFD Travel Time (EMS) (seconds)',
+										font: { size: 12 }
+									},
+									subtitle: {
+										text: '286 seconds (Over target: 271)',
+										font: {
+											size: 10,
+											color: 'grey',
+										},       
+									},
+									value: 286,
+							        valueIndicator: {
+							            color: 'red'
+							        },
+									subvalues: [271]
+								
+								}).dxCircularGauge('instance');
+							});
+						</script>
+						<div id="gauge-4" style="height: 250px; margin: 0 30px;"></div>
+					</div>
+					<div class="col-sm-3">
+						<script type="text/javascript">
+							jQuery(document).ready(function($)
+							{
+								if( ! $.isFunction($.fn.dxChart))
+									return;
+				
+								var gauge = $('#gauge-5').dxCircularGauge({
+									scale: {
+										startValue: 0,
+										endValue: 100,
+										majorTick: {
+											color: '#1A1100',
+											tickInterval: 10
+										},
+										minorTick: {
+											color: '#1A1100',
+											visible: true,
+											tickInterval: 5
+										}
+									},
+									rangeContainer: {
+										backgroundColor: 'none'
+									},
+								    tooltip: {
+								            enabled: true,
+									},
+									title: {
+										text: 'EMD Call Processing Time (seconds)',
+										font: { size: 12 }
+									},
+							        valueIndicator: {
+							            color: 'red'
+							        },
+									subtitle: {
+										text: '80 seconds (Over target: 60)',
+										font: {
+											size: 10,
+											color: 'grey',
+										},       
+									},
+									value: 80,
+									subvalues: [60]
 								
 								
-							}).dxCircularGauge('instance');
+								}).dxCircularGauge('instance');
 			
-							$("#gauge-2-randomize").on('click', function(ev)
-							{
-								ev.preventDefault();
+								$("#gauge-2-randomize").on('click', function(ev)
+								{
+									ev.preventDefault();
 				
-								gauge.value(between(0, 1000));
+									gauge.value(between(0, 1000));
 				
+								});
+			
+								$("#gauge-2-res").on('click', function(ev)
+								{
+									ev.preventDefault();
+				
+									gauge.value(0);
+								});
 							});
-			
-							$("#gauge-2-res").on('click', function(ev)
-							{
-								ev.preventDefault();
-				
-								gauge.value(0);
-							});
-						});
-					</script>
-					<div id="gauge-5" style="height: 250px; margin: 0 30px;"></div>
+						</script>
+						<div id="gauge-5" style="height: 250px; margin: 0 30px;"></div>
+					</div>
 				</div>
 			</div>
 		</div>
-	<div class="row">
-		<div class="col-sm-3">
+		<div class="row">
+
+			<div class="col-sm-3">
 			
-			<div class="xe-widget xe-progress-counter xe-progress-counter-pink" data-count=".num" data-from="0" data-to="274.6" data-duration="2">
+				<div class="xe-widget xe-progress-counter xe-progress-counter-grey" data-count=".num" data-from="0" data-to="3188" data-suffix="" data-duration="3">
 				
-				<div class="xe-background">
-					<i class="linecons-lightbulb"></i>
-				</div>
-				
-				<div class="xe-upper">
-					<div class="xe-icon">
-						<i class="linecons-lightbulb"></i>
+					<div class="xe-background">
+						<i class="linecons-fire"></i>
 					</div>
-					<div class="xe-label">
-						<span>City Crime Rate</span>
-						<strong class="num">0</strong>
+				
+					<div class="xe-upper">
+						<div class="xe-icon">
+							<i class="linecons-fire"></i>
+						</div>
+						<div class="xe-label">
+							<span>Firefighters on Payroll</span>
+							<strong class="num">0</strong>
+						</div>
 					</div>
-				</div>
 				
-				<div class="xe-progress">
-					<span class="xe-progress-fill" data-fill-from="0" data-fill-to="80" data-fill-unit="%" data-fill-property="width" data-fill-duration="2" data-fill-easing="true"></span>
-				</div>
+					<div class="xe-progress">
+						<span class="xe-progress-fill" data-fill-from="0" data-fill-to="89" data-fill-unit="%" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
+					</div>
 				
-				<div class="xe-lower">
-					<span>Previous Year</span>
-					<strong>285</strong>
+					<div class="xe-lower">
+						<span>Nov '14'</span>
+						<strong>M.o.M.: Unknown</strong>
+					</div>
+					<div class="label label-default">Goal: 3,600 (FY2015)</div>
+				
 				</div>
-				<div class="label label-success">Exceeds Target</div>
+			
+
+			
+				<div class="xe-widget xe-progress-counter xe-progress-counter-grey" data-count=".num" data-from="0" data-to="9890" data-suffix="" data-duration="4">
+				
+					<div class="xe-background">
+						<i class="fa-car"></i>
+					</div>
+				
+					<div class="xe-upper">
+						<div class="xe-icon">
+							<i class="fa-car"></i>
+						</div>
+						<div class="xe-label">
+							<span>Police Officers on Force</span>
+							<strong class="num">0</strong>
+						</div>
+					</div>
+				
+					<div class="xe-progress">
+						<span class="xe-progress-fill" data-fill-from="0" data-fill-to="98.9" data-fill-unit="%" data-fill-property="width" data-fill-duration="4" data-fill-easing="true"></span>
+					</div>
+				
+					<div class="xe-lower">
+						<span>Nov '14</span>
+						<strong>M.o.M.: Unknown</strong>
+					</div>
+					<div class="label label-default">On Track</div>
+				
+				</div>
+			
 			</div>
-			
-		</div>
-		<div class="col-sm-3">
-			
-			<div class="xe-widget xe-progress-counter xe-progress-counter-turquoise" data-count=".num" data-from="0" data-to="3188" data-suffix="M" data-duration="3">
-				
-				<div class="xe-background">
-					<i class="linecons-money"></i>
-				</div>
-				
-				<div class="xe-upper">
-					<div class="xe-icon">
-						<i class="linecons-money"></i>
-					</div>
-					<div class="xe-label">
-						<span>Firefighters on Payroll</span>
-						<strong class="num">0</strong>
-					</div>
-				</div>
-				
-				<div class="xe-progress">
-					<span class="xe-progress-fill" data-fill-from="0" data-fill-to="89" data-fill-unit="%" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
-				</div>
-				
-				<div class="xe-lower">
-					<span>Percent to Goal</span>
-					<strong>89% (3600)</strong>
-				</div>
-				<div class="label label-success">On Track</div>
-				
-			</div>
-			
-		</div>
-		<div class="col-sm-3">
-			
-			<div class="xe-widget xe-progress-counter xe-progress-counter-info" data-count=".num" data-from="0" data-to="9890" data-suffix="" data-duration="4">
-				
-				<div class="xe-background">
-					<i class="linecons-t-shirt"></i>
-				</div>
-				
-				<div class="xe-upper">
-					<div class="xe-icon">
-						<i class="linecons-t-shirt"></i>
-					</div>
-					<div class="xe-label">
-						<span>Police Officers on Force</span>
-						<strong class="num">0</strong>
-					</div>
-				</div>
-				
-				<div class="xe-progress">
-					<span class="xe-progress-fill" data-fill-from="0" data-fill-to="98" data-fill-unit="%" data-fill-property="width" data-fill-duration="4" data-fill-easing="true"></span>
-				</div>
-				
-				<div class="xe-lower">
-					<span>Percent to Goal</span>
-					<strong>98% (10023)</strong>
-				</div>
-				<div class="label label-success">On Track</div>
-				
-			</div>
-			
-		</div>
-		<div class="col-sm-3">
-			
-			<div class="xe-widget xe-progress-counter xe-progress-counter-red" data-count=".num" data-from="100" data-to="658" data-duration="3">
-				
-				<div class="xe-background">
-					<i class="linecons-shop"></i>
-				</div>
-				
-				<div class="xe-upper">
-					<div class="xe-icon">
-						<i class="linecons-shop"></i>
-					</div>
-					<div class="xe-label">
-						<span>Applicants Using Expedited Hiring Process</span>
-						<strong class="num">0</strong>
-					</div>
-				</div>
-				
-				<div class="xe-progress">
-					<span class="xe-progress-fill" data-fill-from="0" data-fill-to="300" data-fill-unit="" data-fill-property="width" data-fill-duration="3" data-fill-easing="true"></span>
-				</div>
-				
-				<div class="xe-lower">
-					<span>Month over month</span>
-					<strong>TBD</strong>
-				</div>
-				<div class="label label-default">No target</div>
-				
-			</div>
-			
-		</div>
+
 		
+
+			<div class="col-sm-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Crime in Los Angeles</h3>
+						<div class="panel-options">
+							<a href="#" data-toggle="panel">
+								<span class="collapse-icon">&ndash;</span>
+								<span class="expand-icon">+</span>
+							</a>
+							<a href="#" data-toggle="remove">
+								&times;
+							</a>
+						</div>
+					</div>
+					<div class="panel-body">
+				<iframe width='100%' height='300' frameborder='0' src='http://abhinemani.cartodb.com/viz/2a62dc2e-94a7-11e4-9261-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			</div>
+		</div>
+			</div>
 	</div>
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Crime in Los Angeles</h3>
-					<div class="panel-options">
-						<a href="#" data-toggle="panel">
-							<span class="collapse-icon">&ndash;</span>
-							<span class="expand-icon">+</span>
-						</a>
-						<a href="#" data-toggle="remove">
-							&times;
-						</a>
-					</div>
-				</div>
-				<div class="panel-body">
-			<iframe width='100%' height='400' frameborder='0' src='http://abhinemani.cartodb.com/viz/2a62dc2e-94a7-11e4-9261-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-		</div>
+	
 	</div>
 
 			
