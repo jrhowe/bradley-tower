@@ -9,7 +9,7 @@
 	<meta name="author" content="" />
 
 	<title>Los Angeles City - Dashboard</title>
- 
+
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
 	<link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
 	<link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
@@ -29,8 +29,59 @@
 	<![endif]-->
 
 
+
 </head>
 <body class="page-body">
+	
+	<div class="settings-pane">
+			
+		<a href="#" data-toggle="settings-pane" data-animate="true">
+			&times;
+		</a>
+		
+		<div class="settings-pane-inner">
+			
+			<div class="row">
+				
+				<div class="col-md-4">
+					
+					<div class="user-info">
+						
+						<div class="user-image">
+							<a href="extra-profile.html">
+								<img src="assets/images/user-2.png" class="img-responsive img-circle" />
+							</a>
+						</div>
+						
+						<div class="user-details">
+							
+							<h3>
+								<a href="extra-profile.html">John Smith</a>
+								
+								<!-- Available statuses: is-online, is-idle, is-busy and is-offline -->
+								<span class="user-status is-online"></span>
+							</h3>
+							
+							<p class="user-title">Web Developer</p>
+							
+							<div class="user-links">
+								<a href="extra-profile.html" class="btn btn-primary">Edit Profile</a>
+								<a href="extra-profile.html" class="btn btn-success">Upgrade</a>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+
+				
+			</div>
+		
+		</div>
+		
+	</div>
 	
 	<nav class="navbar horizontal-menu navbar-fixed-top navbar-minimal"><!-- set fixed position by adding class "navbar-fixed-top" -->
 		
@@ -129,173 +180,18 @@
 		<div class="main-content">
 				
 				<div class="row">
-					<div class="col-sm-6">
 				
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Job Growth</h3>
-								<div class="panel-options">
-									<a href="#" data-toggle="panel">
-										<span class="collapse-icon">&ndash;</span>
-										<span class="expand-icon">+</span>
-									</a>
-									<a href="#" data-toggle="remove">
-										&times;
-									</a>
-								</div>
-							</div>
-							<div class="panel-body">	
-								<script type="text/javascript">
-									jQuery(document).ready(function($)
-									{
-										if( ! $.isFunction($.fn.dxChart))
-											return;
-										
-										var dataSource = [
-											{ year: 2005, losangeles: 1653776, angelenos: 1793696 },
-											{ year: 2006, losangeles: 1653448, angelenos: 1830638 },
-											{ year: 2007, losangeles: 1644218, angelenos: 1856941 },
-											{ year: 2008, losangeles: 1580641, angelenos: 1784569 },
-											{ year: 2009, losangeles: 1461231, angelenos: 1700288 },
-											{ year: 2010, losangeles: 1496769, angelenos: 1728441 },
-											{ year: 2011, losangeles: 1500670, angelenos: 1737918 },
-											{ year: 2012, losangeles: 1552452, angelenos: 1765979 },
-											{ year: 2013, losangeles: 1588381, angelenos: 1794791 },
-										];
-									
-										$("#bar-3").dxChart({
-											dataSource: dataSource,
-											commonSeriesSettings: {
-												argumentField: "year"
-											},
-											series: [
-												{ valueField: "losangeles", name: "Jobs in Los Angeles", color: "#40bbea" },
-												{ valueField: "angelenos", name: "Jobs for Angelenos", color: "#cc3f44" },
-											],
-											argumentAxis:{
-												grid:{
-													visible: true
-												}
-											},
-											tooltip:{
-												enabled: true
-											},
-											title: "",
-											legend: {
-												verticalAlignment: "bottom",
-												horizontalAlignment: "center"
-											},
-											commonPaneSettings: {
-												border:{
-													visible: true,
-													right: false
-												}	   
-											}
-										});
-									});
-								</script>
-								<div id="bar-3" style="height: 300px; width: 100%;"></div>
-							</div>
-						</div>
+					<div class="col-sm-12">
+							
+								<div id="map"></div>
 						
-					</div>
-					<div class="col-sm-6">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Building Permits</h3>
-								<div class="panel-options">
-									<a href="#" data-toggle="panel">
-										<span class="collapse-icon">&ndash;</span>
-										<span class="expand-icon">+</span>
-									</a>
-									<a href="#" data-toggle="remove">
-										&times;
-									</a>
-								</div>
-							</div>
-							<div class="panel-body">	
-								<iframe width='100%' height='300' frameborder='0' src='http://abhinemani.cartodb.com/viz/d3da64de-9498-11e4-8ce4-0e853d047bba/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>						
-							</div>
-						</div>
 					
 
 					</div>
 				</div>
+		</div>
+	</div>
 
-				<!-- MOCS -->		
-	  		  <div id="photogrid"></div>
-					
-
-
-		<script id="photogrid" type="text/html">
-		       <div class="row" data-equalizer>
- 
-		         {{#rows}}
- 				<div class="col-sm-3">
-					
- 					<div class="xe-widget xe-progress-counter xe-progress-counter-{{color}}">
-						
- 						<div class="xe-background">
- 							<i class="{{icon}}"></i>
- 						</div>
-						
- 						<div class="xe-upper">
- 							<div class="xe-icon">
- 								<i class="{{icon}}"></i>
- 							</div>
- 							<div class="xe-label">
- 								<span>{{metric}}</span>
- 								<strong class="num">{{value}}</strong>
- 							</div>
- 						</div>
-						
- 						<div class="xe-progress">
- 							<span class="xe-progress-fill" data-fill-to="0" data-fill-unit="%" length data-fill-duration="3" data-fill-easing="true" style="width: {{percentage}}%;"></span>
- 						</div>
-						
- 						<div class="xe-lower">
- 							<strong><a href="{{chartlink}}"><i class="fa-bar-chart"></i></a>			
-							<a href="{{maplink}}"><i class="fa-map-marker"></i>	</a>			
-							<a href="{{datalink}}"><i class="fa-sort-numeric-asc"></i></a>
-							<a href="{{checklink}}"><i class="fa-check-square-o"></i>	</a>			
-									{{date}} | {{frequency}}: {{change}}
-							</strong>
-							
- 						</div>
- 						<div class="label label-default">Goal: {{goal}}</div>
-						
- 					</div>
-					
- 				</div>     
-
-
-
-		     
- 
-		  {{/rows}}   </div>  
-		</script>
-
-
-		<script type="text/javascript">
-		  document.addEventListener('DOMContentLoaded', function() {
-		  	var URL = "1NEhvrFwqwgSUrkHmUfPzsHeLA0PMDLcGGhdoZ1sBtbY"
-		  	Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, } )
-		  })
-  
-
-		  function showInfo(data) {
-		    var html = Sheetsee.ich.photogrid({'rows': data})
-		    $('#photogrid').html(html)
-		    var optionsJSON = ["metric"]
-		      $('#photogrid a').each(function() {
-		          if($(this).attr('href') === '' || $(this).text() === 'N/A') {
-		              $(this).addClass("disabled");
-		          }
-		      });
-		     }
-			 
-			
-		  </script>
 			
 			<!-- Main Footer -->
 			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
@@ -359,9 +255,15 @@
 
 	<!-- JavaScripts initializations and stuff -->
 	<script src="assets/js/xenon-custom.js"></script>
-    <script type='text/javascript' src='assets/js/sheetsee.js'></script>
-	
-    <script type='text/javascript' src='assets/js/tabletop.js'></script>
+	<script type="text/javascript">
+	$(function() {
+	   x = location.hash.substr(1);
+	   mapDiv = document.getElementById("map");
+	   mapDiv.innerHTML = "<iframe id='map' width='100%' height='600' frameborder='0' src='http://abhinemani.cartodb.com/viz/" + x + "/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>";
+	   
+	});
+	</script>
+
 
 </body>
 </html>
