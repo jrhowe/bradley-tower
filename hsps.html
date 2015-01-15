@@ -195,19 +195,21 @@
 			<!-- main menu -->
 					
 			<ul class="navbar-nav">
-				<li  class="opened active">
-					<a href="index.html">
-						<i class="linecons-cog"></i>
-						<span class="title">All Metrics</span>
-					</a>
-					
-				</li>
+
 				<li  class="">
-					<a href="topsheet.html">
+					<a href="index.html">
 						<i class="linecons-cog"></i>
 						<span class="title">Top Sheet</span>
 					</a>
+					<ul>
+						<li  class="">
+							<a href="allmetrics.html">
+								<i class="linecons-cog"></i>
+								<span class="title">All Metrics</span>
+							</a>
 					
+						</li>
+					</ul>
 				</li>
 				<li>
 					<a href="moed.html">
@@ -258,7 +260,7 @@
 		
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">LAPD & LAFP Response Times (Nov '14)</h3>
+						<h3 class="panel-title">LAFD Response Times (Nov '14)</h3>
 						<div class="panel-options">
 							<a href="#" data-toggle="panel">
 								<span class="collapse-icon">&ndash;</span>
@@ -269,8 +271,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="panel-body">	
-					<div class="col-sm-3">
+					<div class="panel-body">
+		<div class="row">
+					<div class="col-sm-4">
 						<script type="text/javascript">
 							jQuery(document).ready(function($)
 							{
@@ -280,7 +283,7 @@
 								var gauge = $('#gauge-2').dxCircularGauge({
 									scale: {
 										startValue: 0,
-										endValue: 40,
+										endValue: 80,
 										majorTick: {
 											color: '#1A1100',
 											tickInterval: 5
@@ -298,27 +301,27 @@
 								            enabled: true,
 									},
 									title: {
-										text: 'LAFD Call Transfer Time (Seconds)',
+										text: 'Call Response Time',
 										font: { size: 12 }
 									},
 									subtitle: {
-										text: '30 seconds (At target)',
+										text: '71 seconds (Over target: 60)',
 										font: {
 											size: 10,
 											color: 'grey',
 										},       
 									},
 							        valueIndicator: {
-							            color: 'green'
+							            color: 'red'
 							        },
-									value: 30,
-									subvalues: [30]
+									value: 71,
+									subvalues: [60]
 								}).dxCircularGauge('instance');
 							});
 						</script>
 						<div id="gauge-2" style="height: 250px; margin: 0 30px;"></div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<script type="text/javascript">
 							jQuery(document).ready(function($)
 							{
@@ -328,45 +331,45 @@
 								var gauge = $('#gauge-3').dxCircularGauge({
 									scale: {
 										startValue: 0,
-										endValue: 400,
+										endValue: 90,
 										majorTick: {
 											color: '#1A1100',
-											tickInterval: 50
+											tickInterval: 5
 										},
 										minorTick: {
 											color: '#1A1100',
 											visible: true,
-											tickInterval: 25
+											tickInterval: 2
 										}
 									},
 									rangeContainer: {
 										backgroundColor: 'none'
 									},
 							        valueIndicator: {
-							            color: 'red'
+							            color: 'green'
 							        },
 								    tooltip: {
 								            enabled: true,
 									},
 									title: {
-										text: 'LAFD Travel Time (Fire)',
+										text: 'Turnout Time Non-EMS',
 										font: { size: 12 }
 									},
 									subtitle: {
-										text: '306 seconds (Over target: 290)',
+										text: '74 seconds (Under target: 80)',
 										font: {
 											size: 10,
 											color: 'grey',
 										},       
 									},
-									value: 306,
-									subvalues: [290]
+									value: 74,
+									subvalues: [80]
 								}).dxCircularGauge('instance');
 							});
 						</script>
 						<div id="gauge-3" style="height: 250px; margin: 0 30px;"></div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<script type="text/javascript">
 							jQuery(document).ready(function($)
 							{
@@ -376,15 +379,15 @@
 								var gauge = $('#gauge-4').dxCircularGauge({
 									scale: {
 										startValue: 0,
-										endValue: 300,
+										endValue: 90,
 										majorTick: {
 											color: '#1A1100',
-											tickInterval: 50
+											tickInterval: 5
 										},
 										minorTick: {
 											color: '#1A1100',
 											visible: true,
-											tickInterval: 10
+											tickInterval: 2
 										}
 									},
 								    tooltip: {
@@ -394,28 +397,30 @@
 										backgroundColor: 'none'
 									},
 									title: {
-										text: 'LAFD Travel Time (EMS) (seconds)',
+										text: 'Turnout Time (EMS)',
 										font: { size: 12 }
 									},
 									subtitle: {
-										text: '286 seconds (Over target: 271)',
+										text: '74 seconds (Over target: 60)',
 										font: {
 											size: 10,
 											color: 'grey',
 										},       
 									},
-									value: 286,
+									value: 74,
 							        valueIndicator: {
 							            color: 'red'
 							        },
-									subvalues: [271]
+									subvalues: [60]
 								
 								}).dxCircularGauge('instance');
 							});
 						</script>
 						<div id="gauge-4" style="height: 250px; margin: 0 30px;"></div>
 					</div>
-					<div class="col-sm-3">
+					</div>
+		<div class="row" style="margin-top: 10px;">
+					<div class="col-sm-6">
 						<script type="text/javascript">
 							jQuery(document).ready(function($)
 							{
@@ -425,10 +430,10 @@
 								var gauge = $('#gauge-5').dxCircularGauge({
 									scale: {
 										startValue: 0,
-										endValue: 100,
+										endValue: 300,
 										majorTick: {
 											color: '#1A1100',
-											tickInterval: 10
+											tickInterval: 30
 										},
 										minorTick: {
 											color: '#1A1100',
@@ -443,21 +448,21 @@
 								            enabled: true,
 									},
 									title: {
-										text: 'EMD Call Processing Time (seconds)',
+										text: 'Travel Time Non-EMS',
 										font: { size: 12 }
 									},
 							        valueIndicator: {
 							            color: 'red'
 							        },
 									subtitle: {
-										text: '80 seconds (Over target: 60)',
+										text: '249 seconds (Over target: 240)',
 										font: {
 											size: 10,
 											color: 'grey',
 										},       
 									},
-									value: 80,
-									subvalues: [60]
+									value: 249,
+									subvalues: [240]
 								
 								
 								}).dxCircularGauge('instance');
@@ -480,6 +485,72 @@
 						</script>
 						<div id="gauge-5" style="height: 250px; margin: 0 30px;"></div>
 					</div>
+					<div class="col-sm-6">
+						<script type="text/javascript">
+							jQuery(document).ready(function($)
+							{
+								if( ! $.isFunction($.fn.dxChart))
+									return;
+				
+								var gauge = $('#gauge-6').dxCircularGauge({
+									scale: {
+										startValue: 0,
+										endValue: 300,
+										majorTick: {
+											color: '#1A1100',
+											tickInterval: 30
+										},
+										minorTick: {
+											color: '#1A1100',
+											visible: true,
+											tickInterval: 5
+										}
+									},
+									rangeContainer: {
+										backgroundColor: 'none'
+									},
+								    tooltip: {
+								            enabled: true,
+									},
+									title: {
+										text: 'Travel Time Non-EMS',
+										font: { size: 12 }
+									},
+							        valueIndicator: {
+							            color: 'red'
+							        },
+									subtitle: {
+										text: '244 seconds (Over target: 240)',
+										font: {
+											size: 10,
+											color: 'grey',
+										},       
+									},
+									value: 244,
+									subvalues: [240]
+								
+								
+								}).dxCircularGauge('instance');
+			
+								$("#gauge-2-randomize").on('click', function(ev)
+								{
+									ev.preventDefault();
+				
+									gauge.value(between(0, 1000));
+				
+								});
+			
+								$("#gauge-2-res").on('click', function(ev)
+								{
+									ev.preventDefault();
+				
+									gauge.value(0);
+								});
+							});
+						</script>
+						<div id="gauge-6" style="height: 250px; margin: 0 30px;"></div>
+					</div>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -487,7 +558,7 @@
 
 			<div class="col-sm-3">
 			
-				<div class="xe-widget xe-progress-counter xe-progress-counter-grey" data-count=".num" data-from="0" data-to="3188" data-suffix="" data-duration="3">
+				<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="0" data-to="3151" data-suffix="" data-duration="3">
 				
 					<div class="xe-background">
 						<i class="linecons-fire"></i>
@@ -511,13 +582,13 @@
 						<span>Nov '14'</span>
 						<strong>M.o.M.: Unknown</strong>
 					</div>
-					<div class="label label-default">Goal: 3,600 (FY2015)</div>
+					<div class="label label-default">Goal: 3,264 (Authorized)</div>
 				
 				</div>
 			
 
 			
-				<div class="xe-widget xe-progress-counter xe-progress-counter-grey" data-count=".num" data-from="0" data-to="9890" data-suffix="" data-duration="4">
+				<div class="xe-widget xe-progress-counter xe-progress-counter-green" data-count=".num" data-from="0" data-to="9914" data-suffix="" data-duration="4">
 				
 					<div class="xe-background">
 						<i class="fa-car"></i>
@@ -538,10 +609,10 @@
 					</div>
 				
 					<div class="xe-lower">
-						<span>Nov '14</span>
+						<span>Jan '15</span>
 						<strong>M.o.M.: Unknown</strong>
 					</div>
-					<div class="label label-default">On Track</div>
+					<div class="label label-default">Goal: 10,000</div>
 				
 				</div>
 			
