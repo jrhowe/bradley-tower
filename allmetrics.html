@@ -93,7 +93,7 @@
 		
 			<!-- Navbar Brand -->
 			<div class="navbar-brand">
-				<a href="/" class="logo">
+				<a href="index.html" class="logo">
 					<img src="http://datala.github.io/flushots/img/datala.png" width="80" alt="" class="hidden-xs" />
 					<img src="http://datala.github.io/flushots/img/datala.png" width="80" alt="" class="visible-xs" />
 				</a>
@@ -134,19 +134,21 @@
 			<!-- main menu -->
 					
 			<ul class="navbar-nav">
-				<li  class="opened active">
-					<a href="index.html">
-						<i class="linecons-cog"></i>
-						<span class="title">All Metrics</span>
-					</a>
-					
-				</li>
+
 				<li  class="">
-					<a href="topsheet.html">
+					<a href="index.html">
 						<i class="linecons-cog"></i>
 						<span class="title">Top Sheet</span>
 					</a>
+					<ul>
+						<li  class="opened active">
+							<a href="allmetrics.html">
+								<i class="linecons-cog"></i>
+								<span class="title">All Metrics</span>
+							</a>
 					
+						</li>
+					</ul>
 				</li>
 				<li>
 					<a href="moed.html">
@@ -191,7 +193,13 @@
 		<div class="main-content">
 					
 	
-			
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="alert alert-danger">
+						<strong>Note: The data on this page is not fully up-to-date.</strong> Please see the group-level pages for accurate information. This is for demonstration purposes only.
+					</div>
+				</div>
+			</div>
 				<!-- MOCS -->
 				<h3 class="bg-info">Economic Development</h3>
 			
