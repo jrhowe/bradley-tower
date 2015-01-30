@@ -434,7 +434,7 @@
 						<a name="datavisitors"></a>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h3 class="panel-title">Deep Dive: Open Data Visitors</h3>
+								<h3 class="panel-title">Deep Dive: Finance Call Center</h3>
 								<div class="panel-options">
 									<a href="#" data-toggle="panel">
 										<span class="collapse-icon">&ndash;</span>
@@ -457,12 +457,18 @@
 												return;
 									
 											var dataSource = [
-			{month: 'May 2014', waittime: 4000, goal: 7000 },
-			{month: 'June 2014', waittime: 4100 },
-			{month: 'July 2014', waittime: 4300 },
-			{month: 'August 2014', waittime: 4400 },
-			{month: 'September 2014', waittime: 4700 },
-			{month: 'October 2014', waittime: 4500, goal: 7000},
+			{month: 'January', waittime: 96, goal: 76 },
+			{month: 'February', waittime: 51, goal: 64 },
+			{month: 'March', waittime: 79, goal: 86 },
+			{month: 'April', waittime: 63, goal: 60 },
+			{month: 'May', waittime: 91, goal: 75 },
+			{month: 'June', waittime: 98, goal: 97},
+			{month: 'July', waittime: 99, goal: 99 },
+			{month: 'August', waittime: 99, goal: 100 },
+			{month: 'September', waittime: 100, goal: 98},
+			{month: 'October', waittime: 97, goal: 98 },
+			{month: 'November', waittime: 99, goal: 99 },
+			{month: 'December', waittime: 92, goal: 96},
 
 											];
 								
@@ -472,8 +478,8 @@
 													argumentField: "month"
 												},
 												series: [
-													{ valueField: "waittime", name: "Unique Vistors", color: "#40bbea" },
-													{ valueField: "goal", name: "Goal", color: "#990000" },
+													{ valueField: "waittime", name: "% Calls Answered", color: "#40bbea" },
+													{ valueField: "goal", name: "Previous Year", color: "#990000" },
 										
 												],
 												argumentAxis:{
@@ -484,7 +490,7 @@
 												tooltip:{
 													enabled: true
 												},
-												title: "Unique Vistors to the Open Data Portal",
+												title: "Call Center Service Level",
 												legend: {
 													verticalAlignment: "bottom",
 													horizontalAlignment: "center"
@@ -503,14 +509,14 @@
 					
 						</div>
 						<div class="col-sm-3">
-							<div class="xe-widget xe-todo-list xe-todo-list-blue">
+							<div class="xe-widget xe-todo-list xe-todo-list-red">
 								<div class="xe-header">
 									<div class="xe-icon">
 										<i class="fa-file-text-o"></i>
 									</div>
 									<div class="xe-label">
 										<span>Goals for Improvement</span>
-										<strong>Open Data Milestones</strong>
+										<strong>Call Center Milestones</strong>
 									</div>
 								</div>
 								<div class="xe-body">
@@ -519,25 +525,37 @@
 										<li class="done">
 											<label>
 												<div class="cbr-replaced cbr-checked"><div class="cbr-input"><input type="checkbox" class="cbr cbr-done" checked=""></div><div class="cbr-state"><span></span></div></div>
-												<span>Refresh Policy</span>
+												<span>Dept: Analyze Top Requests</span>
 											</label>
 										</li>
 										<li class="done">
 											<label>
 												<div class="cbr-replaced cbr-checked"><div class="cbr-input"><input type="checkbox" class="cbr cbr-done" checked=""></div><div class="cbr-state"><span></span></div></div>
-												<span>Create Links on Library Site</span>
+												<span>Dept: Implement E-Filing</span>
 											</label>
 										</li>
 										<li class="done">
 											<label>
 												<div class="cbr-replaced cbr-checked"><div class="cbr-input"><input type="checkbox" class="cbr cbr-done" checked=""></div><div class="cbr-state"><span></span></div></div>
-												<span>Develop Community Engagement Plan</span>
+												<span>Dept: Multilingual Informational Videos</span>
 											</label>
 										</li>
 										<li>
 											<label>
 												<input type="checkbox" class="cbr" />
-												<span>Host Monthly Events</span>
+												<span>Dept/Mayor: Pro-Bono Consultant Recommendations for System</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox" class="cbr" />
+												<span>Dept/ITA: Call System Upgrade</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox" class="cbr" />
+												<span>Dept: IVR Voice Recognition</span>
 											</label>
 										</li>
 									</ul>
@@ -550,6 +568,218 @@
 
 						</div>
 					</div>
+		
+							<div class="row">
+								<a name="gsd"></a>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3 class="panel-title">Deep Dive: GSD Street Sweeper Fleet</h3>
+										<div class="panel-options">
+											<a href="#" data-toggle="panel">
+												<span class="collapse-icon">&ndash;</span>
+												<span class="expand-icon">+</span>
+											</a>
+											<a href="#" data-toggle="remove">
+												&times;
+											</a>
+										</div>
+									</div>
+			
+				
+										<div class="panel-body">
+											<div class="col-sm-9">
+							
+											<script type="text/javascript">
+												jQuery(document).ready(function($)
+												{
+													if( ! $.isFunction($.fn.dxChart))
+														return;
+									
+													var dataSource = [
+					{month: 'FY12', waittime: 65, goal: 85 },
+					{month: 'FY13', waittime: 65 },
+					{month: 'FY14', waittime: 60 },
+					{month: 'FY15 YTD', waittime: 54, goal: 85},
+
+													];
+								
+													$("#bar-4").dxChart({
+														dataSource: dataSource,
+														commonSeriesSettings: {
+															argumentField: "month"
+														},
+														series: [
+															{ valueField: "waittime", name: "% units available", color: "#40bbea" },
+															{ valueField: "goal", name: "Goal", color: "#990000" },
+										
+														],
+														argumentAxis:{
+															grid:{
+																visible: true
+															}
+														},
+														tooltip:{
+															enabled: true
+														},
+														title: "Street Sweeper Fleet Availability",
+														legend: {
+															verticalAlignment: "bottom",
+															horizontalAlignment: "center"
+														},
+														commonPaneSettings: {
+															border:{
+																visible: true,
+																right: false
+															}	   
+														}
+													});
+												});
+											</script>
+											<div id="bar-4" style="height: 300px; width: 100%;"></div>
+					
+					
+								</div>
+								<div class="col-sm-3">
+									<div class="xe-widget xe-todo-list xe-todo-list-blue">
+										<div class="xe-header">
+											<div class="xe-icon">
+												<i class="fa-file-text-o"></i>
+											</div>
+											<div class="xe-label">
+												<span>Goals for Improvement</span>
+												<strong>Street Sweeper Fleet Milestones</strong>
+											</div>
+										</div>
+										<div class="xe-body">
+						
+											<ul class="list-unstyled">
+											
+												<li>
+													<label>
+														<input type="checkbox" class="cbr" />
+														<span>Department & Mayor: Deeper data & analysis via COMPSTAT</span>
+													</label>
+												</li>
+											</ul>
+						
+										</div>
+										
+										</div>
+									</div>
+				
+
+								</div>
+							</div>
+							
+									<div class="row">
+										<a name="personell"></a>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 class="panel-title">Deep Dive: Civil Service Hiring </h3>
+												<div class="panel-options">
+													<a href="#" data-toggle="panel">
+														<span class="collapse-icon">&ndash;</span>
+														<span class="expand-icon">+</span>
+													</a>
+													<a href="#" data-toggle="remove">
+														&times;
+													</a>
+												</div>
+											</div>
+			
+				
+												<div class="panel-body">
+													<div class="col-sm-9">
+							
+													<script type="text/javascript">
+														jQuery(document).ready(function($)
+														{
+															if( ! $.isFunction($.fn.dxChart))
+																return;
+									
+															var dataSource = [
+							{month: 'July', waittime: 342},
+							{month: 'August', waittime: 359 },
+							{month: 'September', waittime: 367 },
+							{month: 'October', waittime: 391},
+							{month: 'November', waittime: 410},
+							{month: 'December', waittime: 356},
+							
+
+															];
+								
+															$("#bar-5").dxChart({
+																dataSource: dataSource,
+																commonSeriesSettings: {
+																	argumentField: "month"
+																},
+																series: [
+																	{ valueField: "waittime", name: "Days", color: "#40bbea" },
+										
+																],
+																argumentAxis:{
+																	grid:{
+																		visible: true
+																	}
+																},
+																tooltip:{
+																	enabled: true
+																},
+																title: "Average Number of Days to Establish Eligible List",
+																legend: {
+																	verticalAlignment: "bottom",
+																	horizontalAlignment: "center"
+																},
+																commonPaneSettings: {
+																	border:{
+																		visible: true,
+																		right: false
+																	}	   
+																}
+															});
+														});
+													</script>
+													<div id="bar-5" style="height: 300px; width: 100%;"></div>
+					
+					
+										</div>
+										<div class="col-sm-3">
+											<div class="xe-widget xe-todo-list xe-todo-list-red">
+												<div class="xe-header">
+													<div class="xe-icon">
+														<i class="fa-file-text-o"></i>
+													</div>
+													<div class="xe-label">
+														<span>Goals for Improvement</span>
+														<strong>Examining  Milestones</strong>
+													</div>
+												</div>
+												<div class="xe-body">
+						
+													<ul class="list-unstyled">
+											
+														<li>
+															<label>
+																<input type="checkbox" class="cbr" />
+																<span>Dept: Process map exercise</span>
+															</label>
+														</li>
+														<li>
+															<label>
+																<input type="checkbox" class="cbr" />
+																<span>Dept: Create prioritization schedule</span>
+															</label>
+														</li>
+													</ul>
+						
+												</div>
+										
+												</div>
+											</div>
+				
+
+										</div>
+									</div>
 			<!-- Main Footer -->
 			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
 			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
