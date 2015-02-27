@@ -190,128 +190,63 @@
 		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
 	
 		<div class="main-content">
-					
 			<div class="row">
-				<div class="panel panel-default">
-						<div class="panel-body">
-							<div class="col-sm-6">
-							
+				<div class="col-sm-12">
+				
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Grouped Bars</h3>
+							<div class="panel-options">
+								<a href="#" data-toggle="panel">
+									<span class="collapse-icon">&ndash;</span>
+									<span class="expand-icon">+</span>
+								</a>
+								<a href="#" data-toggle="remove">
+									&times;
+								</a>
+							</div>
+						</div>
+						<div class="panel-body">	
 							<script type="text/javascript">
 								jQuery(document).ready(function($)
 								{
 									if( ! $.isFunction($.fn.dxChart))
 										return;
-									
+										
 									var dataSource = [
-	{month: 'July 2013', waittime: 6.08, goal: 3 },
-	{month: 'August 2013', waittime: 14.55 },
-	{month: 'September 2013', waittime: 17.34 },
-	{month: 'October 2013', waittime: 25.89 },
-	{month: 'November 2013', waittime: 31.58 },
-	{month: 'December 2013', waittime: 16.91 },
-	{month: 'January 2014', waittime: 20.09 },
-	{month: 'February 2014', waittime: 31.59 },
-	{month: 'March 2014', waittime: 33.52 },
-	{month: 'April 2014', waittime: 21.01 },
-	{month: 'May 2014', waittime: 18.31 },
-	{month: 'June 2014', waittime: 32.9 },
-	{month: 'July 2014', waittime: 40.43 },
-	{month: 'August 2014', waittime: 39.65 },
-	{month: 'September 2014', waittime: 15.66 },
-	{month: 'October 2014', waittime: 8.78, goal: 3 },
-	{month: 'November 2014', waittime: 4.23, goal: 3 },
-	{month: 'December 2014', waittime: 5.72, goal: 3 },
-	{month: 'January 2015', waittime: 3.29, goal: 3 },
-	
-
+										{ state: "China", oil: 4.95, gas: 2.85, coal: 45.56 },
+										{ state: "Russia", oil: 12.94, gas: 17.66, coal: 4.13 },
+										{ state: "USA", oil: 8.51, gas: 19.87, coal: 15.84 },
+										{ state: "Iran", oil: 5.3, gas: 4.39 },
+										{ state: "Canada", oil: 4.08, gas: 5.4 },
+										{ state: "Saudi Arabia", oil: 12.03 },
+										{ state: "Mexico", oil: 3.86 }
 									];
-								
-									$("#bar-3").dxChart({
+									
+									$("#bar-2").dxChart({
+										equalBarWidth: false,
 										dataSource: dataSource,
 										commonSeriesSettings: {
-											argumentField: "month"
+										    argumentField: "state",
+										    type: "bar"
 										},
 										series: [
-											{ valueField: "waittime", name: "DWP Wait Times (Minutes)", color: "#40bbea" },
-											{ valueField: "goal", name: "Goal", color: "#990000" },
-										
+										    { valueField: "oil", name: "Oil Production", color: "#0e62c7" },
+										    { valueField: "gas", name: "Gas Production", color: "#2c2e2f" },
+										    { valueField: "coal", name: "Coal Production", color: "#7c38bc" }
 										],
-										argumentAxis:{
-											grid:{
-												visible: true
-											}
-										},
-										tooltip:{
-											enabled: true
-										},
-										title: "DWP Call Wait Time",
 										legend: {
-											verticalAlignment: "bottom",
-											horizontalAlignment: "center"
+										    verticalAlignment: "bottom",
+										    horizontalAlignment: "center"
 										},
-										commonPaneSettings: {
-											border:{
-												visible: true,
-												right: false
-											}	   
-										}
+										title: "Percent of Total Energy Production"
 									});
 								});
 							</script>
-							<div id="bar-3" style="height: 300px; width: 100%;"></div>
-					
-					
-				</div>
-				<div class="col-sm-6">
-					<script type="text/javascript">
-					jQuery(document).ready(function($)
-					{
-						if( ! $.isFunction($.fn.dxChart))
-							return;
-							
-						var dataSource = [
-							{region: "New Starts: Purple Line Phase 1", val: 1250000000},
-							{region: "New Starts: Regional Connector", val: 670000000},
-							{region: "TIFIA: Purple Line Phase 1", val: 856000000},
-							{region: "TIFIA: Regional Connector", val: 160000000}
-						], timer;
+							<div id="bar-2" style="height: 400px; width: 100%;"></div>
+						</div>
+					</div>
 						
-						$("#bar-8").dxPieChart({
-							dataSource: dataSource,
-							title: "MTA Money Raised ($3B)",
-							tooltip: {
-								enabled: true,
-							  	format:"millions",
-								customizeText: function() { 
-									return this.argumentText + "<br/>" + this.valueText;
-								}
-							},
-							size: {
-								height: 280
-							},
-							pointClick: function(point) {
-								point.showTooltip();
-								clearTimeout(timer);
-								timer = setTimeout(function() { point.hideTooltip(); }, 2000);
-								$("select option:contains(" + point.argument + ")").prop("selected", true);
-							},
-							legend: {
-								visible: true,
-
-							},  
-							series: [{
-								type: "doughnut",
-								argumentField: "region"
-							}],
-										palette: xenonPalette
-							
-						});
-						
-					});
-					</script>
-					<div id="bar-8" style="height: 300px; width: 100%;"></div>
-				</div>
-
 				</div>
 			</div>
 			
