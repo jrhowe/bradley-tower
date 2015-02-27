@@ -482,7 +482,159 @@
 			 
 			
 		  </script>
-		
+					<div class="row">
+				
+					<div class="panel panel-default">				
+						<div class="panel-body">
+								<div class="col-sm-4">
+								<script type="text/javascript">
+									jQuery(document).ready(function($)
+									{
+										if( ! $.isFunction($.fn.dxChart))
+											return;
+										
+										$("#bar-5").dxChart({
+											dataSource: [
+												{dept: "Police", water: 73.5},
+												{dept: "Municipal", water: 46.9},
+												{dept: "Sanitation", water: 43.3},
+												{dept: "Fire", water: 32.8},
+												{dept: "Libraries", water: 31.5},
+												{dept: "Animal", water: 27.1},
+												{dept: "GSD", water: 1.4} 
+											],										
+									 
+											series: {
+												argumentField: "dept",
+												valueField: "water",
+												name: "Water",
+												type: "bar",
+												color: '#68b828',
+
+											},
+											
+										    tooltip: {
+										        enabled: true
+										    },
+											legend: {
+
+												visible: false
+											},
+									        valueAxis: {
+									            title: 'Millions of Gallons',
+									        },
+											title: 'Water (Total Consumption)'
+																					
+										});
+									});
+								
+								</script>
+								<div id="bar-5" style="height: 440px; width: 100%;"></div>
+								</div>
+							
+								<div class="col-sm-4">
+								
+								<script type="text/javascript">
+									jQuery(document).ready(function($)
+									{
+										if( ! $.isFunction($.fn.dxChart))
+											return;
+										
+										$("#bar-6").dxChart({
+											dataSource: [
+												{dept: "Street Maintenance", gas: 102},
+												{dept: "Municipal", gas: 80},
+												{dept: "Police", gas: 67.2},
+												{dept: "Fire", gas: 21.4},
+												{dept: "Sanitation", gas: 15},
+												{dept: "Libraries", gas: 13.8},
+												{dept: "GSD Facilities", gas: 12.8},
+												{dept: "Animal", gas: 12} 
+												
+											],										
+									 
+											series: {
+												argumentField: "dept",
+												valueField: "gas",
+												name: "Gas",
+												type: "bar",
+												color: '#7c38bc',
+												
+											
+											},
+											
+										    tooltip: {
+										        enabled: true
+										    },
+											legend: {
+
+												visible: false
+											},
+											title: 'Gas (Total Consumption)'
+																					
+										});
+									});
+								
+								</script>
+								<div id="bar-6" style="height: 440px; width: 100%;"></div>
+							</div>
+							
+								<div class="col-sm-4">
+								
+								<script type="text/javascript">
+									jQuery(document).ready(function($)
+									{
+										if( ! $.isFunction($.fn.dxChart))
+											return;
+										
+										$("#bar-7").dxChart({
+											dataSource: [
+												{dept: "Police", electricity: 58.7},
+												{dept: "Municipal", electricity: 57},
+												{dept: "Libraries", electricity: 20.9},
+												{dept: "Fire", electricity: 14.9},
+												{dept: "Sanitation", electricity: 5.83},
+												{dept: "GSD Facilities", electricity: 4.23},
+												{dept: "Animal", electricity: 3.71} 
+											],										
+									 
+											series: {
+												argumentField: "dept",
+												valueField: "electricity",
+												name: "Electricity",
+												type: "bar",
+												color: '#fcd036',
+												
+												
+											
+											},
+											
+										    tooltip: {
+										        enabled: true
+										    },
+											
+											legend: {
+
+												visible: false
+											},
+											title: 'Electricity (Total Consumption)'
+																					
+										});
+									});
+								
+								</script>
+								<div id="bar-7" style="height: 440px; width: 100%;"></div>
+							</div>
+							
+						</div>
+
+					</div>
+
+			</div>
+			
+			
+			
+
 	
 			<!-- Main Footer -->
 			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
