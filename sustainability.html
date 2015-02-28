@@ -217,36 +217,163 @@
 										return;
 										
 									var dataSource = [
-										{ state: "China", oil: 4.95, gas: 2.85, coal: 45.56 },
-										{ state: "Russia", oil: 12.94, gas: 17.66, coal: 4.13 },
-										{ state: "USA", oil: 8.51, gas: 19.87, coal: 15.84 },
-										{ state: "Iran", oil: 5.3, gas: 4.39 },
-										{ state: "Canada", oil: 4.08, gas: 5.4 },
-										{ state: "Saudi Arabia", oil: 12.03 },
-										{ state: "Mexico", oil: 3.86 }
+										{ state: "Sanitation", 2012: 80, 2013: 90.6, 2014: 80.4 },
+										{ state: "Animal Services", 2012: 8, 2013: 9.8, 2014: 10.3 },
+										{ state: "Fire", 2012: 4.3, 2013: 4.6, 2014: 3.9 },
+										{ state: "Police", 2012: 2.4, 2013: 2.8, 2014: 2.4 },
+										{ state: "Libraries", 2012: 2.6, 2013: 2.5, 2014: 2.3 },
 									];
 									
 									$("#bar-4").dxChart({
 										equalBarWidth: false,
 										dataSource: dataSource,
 										commonSeriesSettings: {
-										    argumentField: "state",
+										    argumentField: "Department",
 										    type: "bar"
 										},
 										series: [
-										    { valueField: "oil", name: "Oil Production", color: "#0e62c7" },
-										    { valueField: "gas", name: "Gas Production", color: "#2c2e2f" },
-										    { valueField: "coal", name: "Coal Production", color: "#7c38bc" }
+										    { valueField: "2012", name: "2012 Water", color: "#0e62c7" },
+										    { valueField: "2013", name: "2013 Water", color: "#2c2e2f" },
+										    { valueField: "2014", name: "2014 Water", color: "#7c38bc" }
 										],
 										legend: {
 										    verticalAlignment: "bottom",
 										    horizontalAlignment: "center"
 										},
-										title: "Percent of Total Energy Production"
+										valueAxis: {
+									            title: 'Gal/sqft',
+									        },
+										title: "H20 - Average Normalized Usage"
 									});
 								});
 							</script>
-							<div id="bar-4" style="height: 400px; width: 100%;"></div>
+							<div id="bar-4" style="height: 600px; width: 100%;"></div>
+						</div>
+					</div>
+						
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-12">
+				
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Grouped Bars</h3>
+							<div class="panel-options">
+								<a href="#" data-toggle="panel">
+									<span class="collapse-icon">&ndash;</span>
+									<span class="expand-icon">+</span>
+								</a>
+								<a href="#" data-toggle="remove">
+									&times;
+								</a>
+							</div>
+						</div>
+						<div class="panel-body">	
+							<script type="text/javascript">
+								jQuery(document).ready(function($)
+								{
+									if( ! $.isFunction($.fn.dxChart))
+										return;
+										
+									var dataSource = [
+										{ state: "Sanitation", 2012: 4.62475, 2013: 4.37708, 2014: 4.10744 },
+										{ state: "Police", 2012: 2.27445, 2013: 2.22835, 2014: 2.22291 },
+										{ state: "Libraries", 2012: 1.28862, 2013: 1.31106, 2014: 1.37993 },
+										{ state: "Animal Services", 2012: 1.1785, 2013: 1.28403, 2014: 1.38853 },
+										{ state: "Fire", 2012: 1.16717, 2013: 1.13146, 2014: 1.16699 },
+									];
+									
+									$("#bar-8").dxChart({
+										equalBarWidth: false,
+										dataSource: dataSource,
+										commonSeriesSettings: {
+										    argumentField: "Department",
+										    type: "bar"
+										},
+										series: [
+										    { valueField: "2012", name: "2012 Electricity", color: "#0e62c7" },
+										    { valueField: "2013", name: "2013 Electricity", color: "#2c2e2f" },
+										    { valueField: "2014", name: "2014 Electricity", color: "#7c38bc" }
+										],
+										legend: {
+										    verticalAlignment: "bottom",
+										    horizontalAlignment: "center"
+										},
+										valueAxis: {
+									            title: 'kWh/sqft',
+									        },
+										title: "kWh - Average Normalized Usage"
+									});
+								});
+							</script>
+							<div id="bar-8" style="height: 500px; width: 100%;"></div>
+						</div>
+					</div>
+						
+				</div>
+			</div>
+			
+			
+			
+			
+			<div class="row">
+				<div class="col-sm-12">
+				
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Grouped Bars</h3>
+							<div class="panel-options">
+								<a href="#" data-toggle="panel">
+									<span class="collapse-icon">&ndash;</span>
+									<span class="expand-icon">+</span>
+								</a>
+								<a href="#" data-toggle="remove">
+									&times;
+								</a>
+							</div>
+						</div>
+						<div class="panel-body">	
+							<script type="text/javascript">
+								jQuery(document).ready(function($)
+								{
+									if( ! $.isFunction($.fn.dxChart))
+										return;
+										
+									var dataSource = [
+										{ state: "Sanitation", 2012: 13850, 2013: 11884, 2014: 9288 },
+										{ state: "Animal Services", 2012: 4585, 2013: 5741, 2014: 5958 },
+										{ state: "Police", 2012: 3318, 2013: 3313, 2014: 2860 },
+										{ state: "Fire", 2012: 2787, 2013: 2938, 2014: 2248 },
+										{ state: "Libraries", 2012: 1200, 2013: 1190, 2014: 809 },
+									];
+									
+									$("#bar-9").dxChart({
+										equalBarWidth: false,
+										dataSource: dataSource,
+										commonSeriesSettings: {
+										    argumentField: "Department",
+										    type: "bar"
+										},
+										series: [
+										    { valueField: "2012", name: "2012 Gas", color: "#0e62c7" },
+										    { valueField: "2013", name: "2013 Gas", color: "#2c2e2f" },
+										    { valueField: "2014", name: "2014 Gas", color: "#7c38bc" }
+										],
+										legend: {
+										    verticalAlignment: "bottom",
+										    horizontalAlignment: "center"
+										},
+					<!-- I'm assuming that I don't need the tooltip line in place -->					
+										valueAxis: {
+									            title: 'btu/sqft',
+									        },
+										title: "Gas - Average Normalized Usage"
+									});
+								});
+							</script>
+							<div id="bar-9" style="height: 500px; width: 100%;"></div>
 						</div>
 					</div>
 						
@@ -341,6 +468,9 @@
 
 												visible: false
 											},
+											valueAxis: {
+									            title: 'Millions of kbtu',
+									        },
 											title: 'Gas (Total Consumption)'
 																					
 										});
@@ -388,6 +518,9 @@
 
 												visible: false
 											},
+											valueAxis: {
+									            title: 'Millions of kWh',
+									        },
 											title: 'Electricity (Total Consumption)'
 																					
 										});
