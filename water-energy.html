@@ -166,8 +166,17 @@
 						<i class="linecons-params"></i>
 						<span class="title">MOBI</span>
 					</a>
+					<ul>
+						<li  class="opened active">
+							<a href="water-energy.html">
+								<i class="linecons-cog"></i>
+								<span class="title">Water & Energy</span>
+							</a>
+					
+						</li>
+					</ul>
 				</li>
-				<li class="opened active">
+				<li>
 					<a href="mocs.html">
 						<i class="linecons-diamond"></i>
 						<span class="title">MOCS</span>
@@ -219,7 +228,7 @@
 												valueField: "water",
 												name: "Water",
 												type: "bar",
-												color: '#4fcdfc',
+												color: '#0e62c7',
 
 											},
 											
@@ -231,7 +240,7 @@
 												visible: false
 											},
 									        valueAxis: {
-									            title: 'Millions of Gallons',
+									            title: 'gallons per sqft',
 									        },
 											title: 'Water - Normalized Average'
 																					
@@ -241,57 +250,6 @@
 								</script>
 								<div id="bar-1" style="height: 440px; width: 100%;"></div>
 								</div>
-							
-								<div class="col-sm-4">
-								
-								<script type="text/javascript">
-									jQuery(document).ready(function($)
-									{
-										if( ! $.isFunction($.fn.dxChart))
-											return;
-										
-										$("#bar-2").dxChart({
-											dataSource: [
-												{dept: "Street Maintenance", gas: 102},
-												{dept: "Municipal", gas: 80},
-												{dept: "Police", gas: 67.2},
-												{dept: "Fire", gas: 21.4},
-												{dept: "Sanitation", gas: 15},
-												{dept: "Libraries", gas: 13.8},
-												{dept: "GSD Facilities", gas: 12.8},
-												{dept: "Animal", gas: 12} 
-												
-											],										
-									 
-											series: {
-												argumentField: "dept",
-												valueField: "gas",
-												name: "Gas",
-												type: "bar",
-												color: '#7c38bc',
-												
-											
-											},
-											
-										    tooltip: {
-										        enabled: true
-										    },
-											legend: {
-
-												visible: false
-											},
-											valueAxis: {
-									            title: 'Millions of kbtu',
-									        },
-											title: 'Gas (Total Consumption)'
-																					
-										});
-									});
-								
-								</script>
-								<div id="bar-2" style="height: 440px; width: 100%;"></div>
-							</div>
-							
 								<div class="col-sm-4">
 								
 								<script type="text/javascript">
@@ -302,13 +260,12 @@
 										
 										$("#bar-3").dxChart({
 											dataSource: [
-												{dept: "Police", electricity: 58.7},
-												{dept: "Municipal", electricity: 57},
-												{dept: "Libraries", electricity: 20.9},
-												{dept: "Fire", electricity: 14.9},
-												{dept: "Sanitation", electricity: 5.83},
-												{dept: "GSD Facilities", electricity: 4.23},
-												{dept: "Animal", electricity: 3.71} 
+												{dept: "Sanitation", electricity: 4.1},
+												{dept: "Police", electricity: 2.2},
+												{dept: "Animal Services", electricity: 1.39},
+												{dept: "Libraries", electricity: 1.38},
+												{dept: "Fire", electricity: 1.2},
+
 											],										
 									 
 											series: {
@@ -316,7 +273,7 @@
 												valueField: "electricity",
 												name: "Electricity",
 												type: "bar",
-												color: '#fcd036',
+												color: '#00b19d',
 												
 												
 											
@@ -331,9 +288,9 @@
 												visible: false
 											},
 											valueAxis: {
-									            title: 'Millions of kWh',
+									            title: 'kWh per sqft',
 									        },
-											title: 'Electricity (Total Consumption)'
+											title: 'Electricity - Normalized Average'
 																					
 										});
 									});
@@ -341,6 +298,54 @@
 								</script>
 								<div id="bar-3" style="height: 440px; width: 100%;"></div>
 							</div>
+								<div class="col-sm-4">
+								
+								<script type="text/javascript">
+									jQuery(document).ready(function($)
+									{
+										if( ! $.isFunction($.fn.dxChart))
+											return;
+										
+										$("#bar-2").dxChart({
+											dataSource: [
+												{dept: "Sanitation", gas: 9288},
+												{dept: "Animal Services", gas: 5958},
+												{dept: "Police", gas: 2860},
+												{dept: "Fire", gas: 2243},
+												{dept: "Libraries", gas: 809}
+												
+											],										
+									 
+											series: {
+												argumentField: "dept",
+												valueField: "gas",
+												name: "Gas",
+												type: "bar",
+												color: '#4fcdfc',
+												
+											
+											},
+											
+										    tooltip: {
+										        enabled: true
+										    },
+											legend: {
+
+												visible: false
+											},
+											valueAxis: {
+									            title: 'btu per sqft',
+									        },
+											title: 'Gas - Normalized Average'
+																					
+										});
+									});
+								
+								</script>
+								<div id="bar-2" style="height: 440px; width: 100%;"></div>
+							</div>
+							
+								
 							
 						</div>
 
@@ -375,7 +380,7 @@
 												valueField: "water",
 												name: "Water",
 												type: "bar",
-												color: '#68b828',
+												color: '#0e62c7',
 
 											},
 											
@@ -397,7 +402,55 @@
 								</script>
 								<div id="bar-5" style="height: 440px; width: 100%;"></div>
 								</div>
-							
+								<div class="col-sm-4">
+								
+								<script type="text/javascript">
+									jQuery(document).ready(function($)
+									{
+										if( ! $.isFunction($.fn.dxChart))
+											return;
+										
+										$("#bar-7").dxChart({
+											dataSource: [
+												{dept: "Police", electricity: 58.7},
+												{dept: "Municipal", electricity: 57},
+												{dept: "Libraries", electricity: 20.9},
+												{dept: "Fire", electricity: 14.9},
+												{dept: "Sanitation", electricity: 5.83},
+												{dept: "GSD Facilities", electricity: 4.23},
+												{dept: "Animal", electricity: 3.71} 
+											],										
+									 
+											series: {
+												argumentField: "dept",
+												valueField: "electricity",
+												name: "Electricity",
+												type: "bar",
+												color: '#00b19d',
+												
+												
+											
+											},
+											
+										    tooltip: {
+										        enabled: true
+										    },
+											
+											legend: {
+
+												visible: false
+											},
+									        valueAxis: {
+									            title: 'Millions of kWh',
+									        },
+											title: 'Electricity (Total Consumption)'
+																					
+										});
+									});
+								
+								</script>
+								<div id="bar-7" style="height: 440px; width: 100%;"></div>
+							</div>
 								<div class="col-sm-4">
 								
 								<script type="text/javascript">
@@ -424,7 +477,7 @@
 												valueField: "gas",
 												name: "Gas",
 												type: "bar",
-												color: '#7c38bc',
+												color: '#4fcdfc',
 												
 											
 											},
@@ -436,6 +489,9 @@
 
 												visible: false
 											},
+									        valueAxis: {
+									            title: 'kbtu',
+									        },
 											title: 'Gas (Total Consumption)'
 																					
 										});
@@ -445,52 +501,7 @@
 								<div id="bar-6" style="height: 440px; width: 100%;"></div>
 							</div>
 							
-								<div class="col-sm-4">
-								
-								<script type="text/javascript">
-									jQuery(document).ready(function($)
-									{
-										if( ! $.isFunction($.fn.dxChart))
-											return;
-										
-										$("#bar-7").dxChart({
-											dataSource: [
-												{dept: "Police", electricity: 58.7},
-												{dept: "Municipal", electricity: 57},
-												{dept: "Libraries", electricity: 20.9},
-												{dept: "Fire", electricity: 14.9},
-												{dept: "Sanitation", electricity: 5.83},
-												{dept: "GSD Facilities", electricity: 4.23},
-												{dept: "Animal", electricity: 3.71} 
-											],										
-									 
-											series: {
-												argumentField: "dept",
-												valueField: "electricity",
-												name: "Electricity",
-												type: "bar",
-												color: '#fcd036',
-												
-												
-											
-											},
-											
-										    tooltip: {
-										        enabled: true
-										    },
-											
-											legend: {
-
-												visible: false
-											},
-											title: 'Electricity (Total Consumption)'
-																					
-										});
-									});
-								
-								</script>
-								<div id="bar-7" style="height: 440px; width: 100%;"></div>
-							</div>
+	
 							
 						</div>
 
