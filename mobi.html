@@ -466,7 +466,7 @@
 												return;
 									
 											var dataSource = [
-			{month: 'January', waittime: 96, goal: 76 },
+			{month: 'January', waittime: 96, goal: 76, nextsteps: 94 },
 			{month: 'February', waittime: 51, goal: 64 },
 			{month: 'March', waittime: 79, goal: 86 },
 			{month: 'April', waittime: 63, goal: 60 },
@@ -487,8 +487,9 @@
 													argumentField: "month"
 												},
 												series: [
-													{ valueField: "waittime", name: "% Calls Answered", color: "#40bbea" },
-													{ valueField: "goal", name: "Previous Year", color: "#990000" },
+													{ valueField: "waittime", name: "2014", color: "#40bbea" },
+													{ valueField: "goal", name: "2013", color: "#990000" },
+													{ valueField: "nextsteps", name: "2013", color: "#7c38bc" },
 										
 												],
 												argumentAxis:{
