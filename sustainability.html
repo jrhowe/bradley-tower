@@ -207,13 +207,11 @@
 										
 										$("#bar-1").dxChart({
 											dataSource: [
-												{dept: "Police", water: 73.5},
-												{dept: "Municipal", water: 46.9},
-												{dept: "Sanitation", water: 43.3},
-												{dept: "Fire", water: 32.8},
-												{dept: "Libraries", water: 31.5},
-												{dept: "Animal", water: 27.1},
-												{dept: "GSD", water: 1.4} 
+												{dept: "Sanitation", water: 80.5},
+												{dept: "Animal Services", water: 10.2},
+												{dept: "Fire", water: 3.9},
+												{dept: "Libraries", water: 2.3},
+												{dept: "Police", water: 2.4},
 											],										
 									 
 											series: {
@@ -221,7 +219,7 @@
 												valueField: "water",
 												name: "Water",
 												type: "bar",
-												color: '#68b828',
+												color: '#4fcdfc',
 
 											},
 											
@@ -235,7 +233,7 @@
 									        valueAxis: {
 									            title: 'Millions of Gallons',
 									        },
-											title: 'Water (Total Consumption)'
+											title: 'Water - Normalized Average'
 																					
 										});
 									});
