@@ -193,193 +193,7 @@
 			<script>
 				var xenonPalette = ['#68b828','#7c38bc','#0e62c7','#fcd036','#4fcdfc','#00b19d','#ff6264','#f7aa47'];
 			</script>
-			<div class="row">
-				<div class="col-sm-12">
-				
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">Grouped Bars</h3>
-							<div class="panel-options">
-								<a href="#" data-toggle="panel">
-									<span class="collapse-icon">&ndash;</span>
-									<span class="expand-icon">+</span>
-								</a>
-								<a href="#" data-toggle="remove">
-									&times;
-								</a>
-							</div>
-						</div>
-						<div class="panel-body">	
-							<script type="text/javascript">
-								jQuery(document).ready(function($)
-								{
-									if( ! $.isFunction($.fn.dxChart))
-										return;
-										
-									var dataSource = [
-										{ state: "Sanitation", year2012: 80, year2013: 90.6, year2014: 80.4 },
-										{ state: "Animal Services", year2012: 8, year2013: 9.8, year2014: 10.3 },
-										{ state: "Fire", year2012: 4.3, year2013: 4.6, year2014: 3.9 },
-										{ state: "Police", year2012: 2.4, year2013: 2.8, year2014: 2.4 },
-										{ state: "Libraries", year2012: 2.6, year2013: 2.5, year2014: 2.3 },
-									];
-									
-									$("#bar-4").dxChart({
-										equalBarWidth: false,
-										dataSource: dataSource,
-										commonSeriesSettings: {
-										    argumentField: "state",
-										    type: "bar"
-										},
-										series: [
-										    { valueField: "year2012", name: "2012 Water", color: "#0e62c7" },
-										    { valueField: "year2013", name: "2013 Water", color: "#2c2e2f" },
-										    { valueField: "year2014", name: "2014 Water", color: "#7c38bc" }
-										],
-										legend: {
-										    verticalAlignment: "bottom",
-										    horizontalAlignment: "center"
-										},
-										valueAxis: {
-									            title: 'Gal/sqft',
-									        },
-										title: "H20 - Average Normalized Usage"
-									});
-								});
-							</script>
-							<div id="bar-4" style="height: 600px; width: 100%;"></div>
-						</div>
-					</div>
-						
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-sm-12">
-				
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">Grouped Bars</h3>
-							<div class="panel-options">
-								<a href="#" data-toggle="panel">
-									<span class="collapse-icon">&ndash;</span>
-									<span class="expand-icon">+</span>
-								</a>
-								<a href="#" data-toggle="remove">
-									&times;
-								</a>
-							</div>
-						</div>
-						<div class="panel-body">	
-							<script type="text/javascript">
-								jQuery(document).ready(function($)
-								{
-									if( ! $.isFunction($.fn.dxChart))
-										return;
-										
-									var dataSource = [
-										{ state: "Sanitation", 2012: 4.62475, 2013: 4.37708, 2014: 4.10744 },
-										{ state: "Police", 2012: 2.27445, 2013: 2.22835, 2014: 2.22291 },
-										{ state: "Libraries", 2012: 1.28862, 2013: 1.31106, 2014: 1.37993 },
-										{ state: "Animal Services", 2012: 1.1785, 2013: 1.28403, 2014: 1.38853 },
-										{ state: "Fire", 2012: 1.16717, 2013: 1.13146, 2014: 1.16699 },
-									];
-									
-									$("#bar-8").dxChart({
-										equalBarWidth: false,
-										dataSource: dataSource,
-										commonSeriesSettings: {
-										    argumentField: "Department",
-										    type: "bar"
-										},
-										series: [
-										    { valueField: "2012", name: "2012 Electricity", color: "#0e62c7" },
-										    { valueField: "2013", name: "2013 Electricity", color: "#2c2e2f" },
-										    { valueField: "2014", name: "2014 Electricity", color: "#7c38bc" }
-										],
-										legend: {
-										    verticalAlignment: "bottom",
-										    horizontalAlignment: "center"
-										},
-										valueAxis: {
-									            title: 'kWh/sqft',
-									        },
-										title: "kWh - Average Normalized Usage"
-									});
-								});
-							</script>
-							<div id="bar-8" style="height: 500px; width: 100%;"></div>
-						</div>
-					</div>
-						
-				</div>
-			</div>
-			
-			
-			
-			
-			<div class="row">
-				<div class="col-sm-12">
-				
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">Grouped Bars</h3>
-							<div class="panel-options">
-								<a href="#" data-toggle="panel">
-									<span class="collapse-icon">&ndash;</span>
-									<span class="expand-icon">+</span>
-								</a>
-								<a href="#" data-toggle="remove">
-									&times;
-								</a>
-							</div>
-						</div>
-						<div class="panel-body">	
-							<script type="text/javascript">
-								jQuery(document).ready(function($)
-								{
-									if( ! $.isFunction($.fn.dxChart))
-										return;
-										
-									var dataSource = [
-										{ state: "Sanitation", 2012: 13850, 2013: 11884, 2014: 9288 },
-										{ state: "Animal Services", 2012: 4585, 2013: 5741, 2014: 5958 },
-										{ state: "Police", 2012: 3318, 2013: 3313, 2014: 2860 },
-										{ state: "Fire", 2012: 2787, 2013: 2938, 2014: 2248 },
-										{ state: "Libraries", 2012: 1200, 2013: 1190, 2014: 809 },
-									];
-									
-									$("#bar-9").dxChart({
-										equalBarWidth: false,
-										dataSource: dataSource,
-										commonSeriesSettings: {
-										    argumentField: "Department",
-										    type: "bar"
-										},
-										series: [
-										    { valueField: "2012", name: "2012 Gas", color: "#0e62c7" },
-										    { valueField: "2013", name: "2013 Gas", color: "#2c2e2f" },
-										    { valueField: "2014", name: "2014 Gas", color: "#7c38bc" }
-										],
-										legend: {
-										    verticalAlignment: "bottom",
-										    horizontalAlignment: "center"
-										},
-					<!-- I'm assuming that I don't need the tooltip line in place -->					
-										valueAxis: {
-									            title: 'btu/sqft',
-									        },
-										title: "Gas - Average Normalized Usage"
-									});
-								});
-							</script>
-							<div id="bar-9" style="height: 500px; width: 100%;"></div>
-						</div>
-					</div>
-						
-				</div>
-			</div>
-			
+
 			<div class="row">
 				
 					<div class="panel panel-default">				
@@ -536,86 +350,6 @@
 
 			</div>
 			
-			
-			
-
-			
-		
-			
-				<!-- MOCS -->		
-	  		  <div id="photogrid"></div>
-					
-
-
-		<script id="photogrid" type="text/html">
-		       <div class="row" data-equalizer>
- 
-		         {{#rows}}
- 				<div class="col-sm-3">
-					
- 					<div class="xe-widget xe-progress-counter xe-progress-counter-{{color}}">
-						
- 						<div class="xe-background">
- 							<i class="{{icon}}"></i>
- 						</div>
-						
- 						<div class="xe-upper">
- 							<div class="xe-icon">
- 								<i class="{{icon}}"></i>
- 							</div>
- 							<div class="xe-label">
- 								<span>{{metric}}</span>
- 								<strong class="num">{{value}}</strong>
- 							</div>
- 						</div>
-						
- 						<div class="xe-progress">
- 							<span class="xe-progress-fill" data-fill-to="0" data-fill-unit="%" length data-fill-duration="3" data-fill-easing="true" style="width: {{percentage}}%;"></span>
- 						</div>
-						
- 						<div class="xe-lower">
- 							<strong><a href="{{chartlink}}"><i class="fa-bar-chart"></i></a>			
-							<a href="{{maplink}}"><i class="fa-map-marker"></i>	</a>			
-							<a href="{{datalink}}"><i class="fa-sort-numeric-asc"></i></a>
-							<a href="{{checklink}}"><i class="fa-check-square-o"></i>	</a>			
-		{{date}} | {{comparison}}: {{change}}
-							</strong>
-							
- 						</div>
- 						<div class="label label-default">Goal: {{goal}}</div>
-						
- 					</div>
-					
- 				</div>     
-
-
-
-		     
- 
-		  {{/rows}}   </div>  
-		</script>
-		
-
-		<script type="text/javascript">
-		  document.addEventListener('DOMContentLoaded', function() {
-		  	var URL = "1V8rh2e2QsZHxK96Uqii5gSTX_KTAchgFjrGooNU5stw"
-		  	Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, } )
-		  })
-  
-
-		  function showInfo(data) {
-		    var html = Sheetsee.ich.photogrid({'rows': data})
-		    $('#photogrid').html(html)
-		    var optionsJSON = ["metric"]
-		      $('#photogrid a').each(function() {
-		          if($(this).attr('href') === '' || $(this).text() === 'N/A') {
-		              $(this).addClass("disabled");
-		          }
-		      });
-		     }
-			 
-			
-		  </script>
 					<div class="row">
 				
 					<div class="panel panel-default">				
@@ -765,6 +499,86 @@
 					</div>
 
 			</div>
+			
+
+			
+		
+			
+				<!-- MOCS -->		
+	  		  <div id="photogrid"></div>
+					
+
+
+		<script id="photogrid" type="text/html">
+		       <div class="row" data-equalizer>
+ 
+		         {{#rows}}
+ 				<div class="col-sm-3">
+					
+ 					<div class="xe-widget xe-progress-counter xe-progress-counter-{{color}}">
+						
+ 						<div class="xe-background">
+ 							<i class="{{icon}}"></i>
+ 						</div>
+						
+ 						<div class="xe-upper">
+ 							<div class="xe-icon">
+ 								<i class="{{icon}}"></i>
+ 							</div>
+ 							<div class="xe-label">
+ 								<span>{{metric}}</span>
+ 								<strong class="num">{{value}}</strong>
+ 							</div>
+ 						</div>
+						
+ 						<div class="xe-progress">
+ 							<span class="xe-progress-fill" data-fill-to="0" data-fill-unit="%" length data-fill-duration="3" data-fill-easing="true" style="width: {{percentage}}%;"></span>
+ 						</div>
+						
+ 						<div class="xe-lower">
+ 							<strong><a href="{{chartlink}}"><i class="fa-bar-chart"></i></a>			
+							<a href="{{maplink}}"><i class="fa-map-marker"></i>	</a>			
+							<a href="{{datalink}}"><i class="fa-sort-numeric-asc"></i></a>
+							<a href="{{checklink}}"><i class="fa-check-square-o"></i>	</a>			
+		{{date}} | {{comparison}}: {{change}}
+							</strong>
+							
+ 						</div>
+ 						<div class="label label-default">Goal: {{goal}}</div>
+						
+ 					</div>
+					
+ 				</div>     
+
+
+
+		     
+ 
+		  {{/rows}}   </div>  
+		</script>
+		
+
+		<script type="text/javascript">
+		  document.addEventListener('DOMContentLoaded', function() {
+		  	var URL = "1V8rh2e2QsZHxK96Uqii5gSTX_KTAchgFjrGooNU5stw"
+		  	Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, } )
+		  })
+  
+
+		  function showInfo(data) {
+		    var html = Sheetsee.ich.photogrid({'rows': data})
+		    $('#photogrid').html(html)
+		    var optionsJSON = ["metric"]
+		      $('#photogrid a').each(function() {
+		          if($(this).attr('href') === '' || $(this).text() === 'N/A') {
+		              $(this).addClass("disabled");
+		          }
+		      });
+		     }
+			 
+			
+		  </script>
+
 			
 			
 			
