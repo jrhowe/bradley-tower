@@ -436,10 +436,10 @@
 					      });
 					     }
 			 
+			 
+				 </script>
 			
-					  </script>
-		
-					<div class="row">
+					  <div class="row">
 						<a name="datavisitors"></a>
 						<div class="panel panel-default">
 							<div class="panel-heading">
@@ -487,8 +487,8 @@
 													argumentField: "month"
 												},
 												series: [
-													{ valueField: "waittime", name: "2014", color: "#40bbea" },
 													{ valueField: "goal", name: "2013", color: "#990000" },
+													{ valueField: "waittime", name: "2014", color: "#40bbea" },
 													{ valueField: "nextsteps", name: "2015", color: "#7c38bc" },
 										
 												],
@@ -515,88 +515,10 @@
 										});
 									</script>
 									<div id="bar-3" style="height: 300px; width: 100%;"></div>
-					
-					
+	
 						</div>
 						
-									<div class="row">
-						<a name="datavisitors"></a>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Deep Dive: ITA Call Time Service Level</h3>
-								<div class="panel-options">
-									<a href="#" data-toggle="panel">
-										<span class="collapse-icon">&ndash;</span>
-										<span class="expand-icon">+</span>
-									</a>
-									<a href="#" data-toggle="remove">
-										&times;
-									</a>
-								</div>
-							</div>
-			
-				
-								<div class="panel-body">
-									<div class="col-sm-9">
-							
-									<script type="text/javascript">
-										jQuery(document).ready(function($)
-										{
-											if( ! $.isFunction($.fn.dxChart))
-												return;
-									
-											var dataSource = [
-			{month: 'January', waittime: 82.2, goal: 91.3 },
-			{month: 'February' },
-			{month: 'March' },
-			{month: 'April' },
-			{month: 'May' },
-			{month: 'June' },
-			{month: 'July' },
-			{month: 'August' },
-			{month: 'September' },
-			{month: 'October' },
-			{month: 'November' },
-			{month: 'December' },
-
-											];
-								
-											$("#bar-3").dxChart({
-												dataSource: dataSource,
-												commonSeriesSettings: {
-													argumentField: "month"
-												},
-												series: [
-													{ valueField: "waittime", name: "Previous Year", color: "#40bbea" },
-													{ valueField: "goal", name: "% Calls Answered < 2 Minutes", color: "#990000" },
-										
-												],
-												argumentAxis:{
-													grid:{
-														visible: true
-													}
-												},
-												tooltip:{
-													enabled: true
-												},
-												title: "Call Center Service Level",
-												legend: {
-													verticalAlignment: "bottom",
-													horizontalAlignment: "center"
-												},
-												commonPaneSettings: {
-													border:{
-														visible: true,
-														right: false
-													}	   
-												}
-											});
-										});
-									</script>
-									<div id="bar-3" style="height: 300px; width: 100%;"></div>
-					
-					
-						</div>
+						
 						<div class="col-sm-3">
 							<div class="xe-widget xe-todo-list xe-todo-list-red">
 								<div class="xe-header">
@@ -657,6 +579,90 @@
 
 						</div>
 					</div>
+						
+						<div class="row">
+						<a name="datavisitors"></a>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Deep Dive: ITA Call Time Service Level</h3>
+								<div class="panel-options">
+									<a href="#" data-toggle="panel">
+										<span class="collapse-icon">&ndash;</span>
+										<span class="expand-icon">+</span>
+									</a>
+									<a href="#" data-toggle="remove">
+										&times;
+									</a>
+								</div>
+							</div>
+			
+				
+							
+								<div class="panel-body">
+									<div class="col-sm-9">
+							
+									<script type="text/javascript">
+										jQuery(document).ready(function($)
+										{
+											if( ! $.isFunction($.fn.dxChart))
+												return;
+									
+											var dataSource = [
+			{month: 'January', waittime: 91.3, goal: 82.2 },
+			{month: 'February', waittime: 92.4 },
+			{month: 'March', waittime: 91.9 },
+			{month: 'April', waittime: 96.5 },
+			{month: 'May', waittime: 94.4 },
+			{month: 'June', waittime: 86.1 },
+			{month: 'July', waittime: 90.8 },
+			{month: 'August', waittime: 88.6 },
+			{month: 'September', waittime: 76.7 },
+			{month: 'October', waittime: 80 },
+			{month: 'November', waittime: 78.2 },
+			{month: 'December', waittime: 78.8 },
+
+											];
+								
+											$("#bar-6").dxChart({
+												dataSource: dataSource,
+												commonSeriesSettings: {
+													argumentField: "month"
+												},
+												series: [
+													{ valueField: "goal", name: "2015", color: "#40bbea" },
+													{ valueField: "waittime", name: "Previous Year (2014)", color: "#990000" },
+										
+												],
+												argumentAxis:{
+													grid:{
+														visible: true
+													}
+												},
+												tooltip:{
+													enabled: true
+												},
+												title: "% of ITA Calls Answered in Under 2 Minutes",
+												legend: {
+													verticalAlignment: "bottom",
+													horizontalAlignment: "center"
+												},
+												commonPaneSettings: {
+													border:{
+														visible: true,
+														right: false
+													}	   
+												}
+											});
+										});
+									</script>
+									<div id="bar-6" style="height: 300px; width: 100%;"></div>
+	
+						</div>
+
+						</div>
+					</div>
+		
+		
 		
 							<div class="row">
 								<a name="gsd"></a>
