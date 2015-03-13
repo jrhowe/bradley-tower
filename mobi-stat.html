@@ -224,6 +224,128 @@
 			 
 			
 		  </script>
+			 
+						
+ 						<div class="row">
+ 						<a name="datavisitors"></a>
+ 						<div class="panel panel-default">
+ 							<div class="panel-heading">
+ 								<h3 class="panel-title">Deep Dive: PerformanceSTAT Adoption</h3>
+ 								<div class="panel-options">
+ 									<a href="#" data-toggle="panel">
+ 										<span class="collapse-icon">&ndash;</span>
+ 										<span class="expand-icon">+</span>
+ 									</a>
+ 									<a href="#" data-toggle="remove">
+ 										&times;
+ 									</a>
+ 								</div>
+ 							</div>
+			
+				
+							
+ 								<div class="panel-body">
+ 									<div class="col-sm-9">
+							
+ 									<script type="text/javascript">
+ 										jQuery(document).ready(function($)
+ 										{
+ 											if( ! $.isFunction($.fn.dxChart))
+ 												return;
+									
+ 											var dataSource = [
+ 			{month: 'June', waittime: 1, goal: 10 },
+ 			{month: 'July', waittime: 1, goal: 10 },
+ 			{month: 'August', waittime: 1, goal: 10 },
+ 			{month: 'September', waittime: 1, goal: 10 },
+ 			{month: 'October', waittime: 2, goal: 10 },
+ 			{month: 'November', waittime: 2, goal: 10 },
+ 			{month: 'December', waittime: 3, goal: 10 },
+ 			{month: 'January', waittime: 4, goal: 10 },
+ 			{month: 'February', waittime: 4, goal: 10 },
+ 			{month: 'March', waittime: 5, goal: 10 },
+
+
+ 											];
+								
+ 											$("#bar-6").dxChart({
+ 												dataSource: dataSource,
+ 												commonSeriesSettings: {
+ 													argumentField: "month"
+ 												},
+ 												series: [
+ 													{ valueField: "goal", name: "Goal", color: "#40bbea" },
+ 													{ valueField: "waittime", name: "Actual", color: "#990000" },
+										
+ 												],
+ 												argumentAxis:{
+ 													grid:{
+ 														visible: true
+ 													}
+ 												},
+ 												tooltip:{
+ 													enabled: true
+ 												},
+ 												title: "# of Departments using PerformanceSTAT",
+ 												legend: {
+ 													verticalAlignment: "bottom",
+ 													horizontalAlignment: "center"
+ 												},
+ 												commonPaneSettings: {
+ 													border:{
+ 														visible: true,
+ 														right: false
+ 													}	   
+ 												}
+ 											});
+ 										});
+ 									</script>
+ 									<div id="bar-6" style="height: 300px; width: 100%;"></div>
+	
+ 						</div>
+ 										<div class="col-sm-3">
+ 											<div class="xe-widget xe-todo-list xe-todo-list-red">
+ 												<div class="xe-header">
+ 													<div class="xe-icon">
+ 														<i class="fa-file-text-o"></i>
+ 													</div>
+ 													<div class="xe-label">
+ 														<span>Goals for Improvement</span>
+ 														<strong>Examining  Milestones</strong>
+ 													</div>
+ 												</div>
+ 												<div class="xe-body">
+						
+ 													<ul class="list-unstyled">
+											
+
+ 														<li>
+ 															<label>
+ 																<input type="checkbox" class="cbr" />
+ 																<span>#doyourjob</span>
+ 															</label>
+ 														</li>
+ 														<li>
+ 															<label>
+ 																<input type="checkbox" class="cbr" />
+ 																<span>#doyourjob</span>
+ 															</label>
+ 														</li> 														<li>
+ 															<label>
+ 																<input type="checkbox" class="cbr" />
+ 																<span>#doyourjob</span>
+ 															</label>
+ 														</li>
+ 													</ul>
+						
+ 												</div>
+										
+ 												</div>
+ 											</div>
+ 						</div>
+ 					</div>
+		
+			 
 		
 
 	
